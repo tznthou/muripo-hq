@@ -2,11 +2,11 @@
   {
     "date": "2025-11-30",
     "dayIndex": 1,
-    "name": "Day 01",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "Compress",
+    "tagline": "圖片壓縮工具",
+    "type": "web",
+    "status": "done",
+    "repo": "https://github.com/tznthou/day-01-compress",
     "demo": "",
     "thumb": "",
     "tags": []
