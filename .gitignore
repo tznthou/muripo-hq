@@ -1,0 +1,21 @@
+# 規劃文件（不進 repo）
+muripo_hq（git_hub_pages）_11_12_月月曆版：規格與落地方案.md
+muripo_30_天_30_repo_git_hub_pages_hq：行動計畫（可立即開工版）.md
+muripo_hq_next_steps.md
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+
+# Claude Code
+.claude.json
+.claude/
+CLAUDE.md
+.mcp.json
