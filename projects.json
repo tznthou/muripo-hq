@@ -14,14 +14,14 @@
   {
     "date": "2025-12-01",
     "dayIndex": 2,
-    "name": "Day 02",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "kebab-rename",
+    "tagline": "一鍵把檔名轉成 kebab-case",
+    "type": "cli",
+    "status": "wip",
+    "repo": "https://github.com/tznthou/kebab-rename",
     "demo": "",
     "thumb": "",
-    "tags": []
+    "tags": ["cli", "rename", "kebab-case"]
   },
   {
     "date": "2025-12-02",
