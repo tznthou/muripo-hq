@@ -26,14 +26,14 @@
   {
     "date": "2025-12-02",
     "dayIndex": 3,
-    "name": "Day 03",
-    "tagline": "Coming soon...",
-    "type": "",
+    "name": "counter",
+    "tagline": "日常步數記錄器 PWA",
+    "type": "web",
     "status": "soon",
-    "repo": "",
+    "repo": "https://github.com/tznthou/day-03-counter",
     "demo": "",
     "thumb": "",
-    "tags": []
+    "tags": ["pwa", "counter", "fitness"]
   },
   {
     "date": "2025-12-03",
