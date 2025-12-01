@@ -29,7 +29,7 @@
     "name": "counter",
     "tagline": "日常步數記錄器 PWA",
     "type": "web",
-    "status": "soon",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-03-counter",
     "demo": "",
     "thumb": "",
