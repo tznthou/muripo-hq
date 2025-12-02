@@ -38,14 +38,14 @@
   {
     "date": "2025-12-03",
     "dayIndex": 4,
-    "name": "Day 04",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "password",
+    "tagline": "暗黑密碼鍛造爐 - 遊戲化密碼產生器",
+    "type": "web",
+    "status": "done",
+    "repo": "https://github.com/tznthou/day-04-password",
     "demo": "",
     "thumb": "",
-    "tags": []
+    "tags": ["password", "generator", "rpg", "gamification"]
   },
   {
     "date": "2025-12-04",
