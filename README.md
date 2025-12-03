@@ -32,15 +32,13 @@ index.html        # 月曆主頁
 style.css         # 樣式
 script.js         # 渲染邏輯
 projects.json     # 30 天專案資料
-assets/thumbs/    # 每日縮圖
 ```
 
 ## 🔄 每日更新
 
 1. 完成當日 repo 並 push
 2. 更新 `projects.json`（改 status 為 done、填入 repo URL）
-3. 放縮圖到 `assets/thumbs/YYYY-MM-DD.png`
-4. push HQ → 完成
+3. push HQ → 完成
 
 ## 📜 License
 
