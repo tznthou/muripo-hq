@@ -42,4 +42,4 @@ projects.json     # 30 天專案資料
 
 ## 📜 License
 
-MIT
+[MIT](LICENSE)
