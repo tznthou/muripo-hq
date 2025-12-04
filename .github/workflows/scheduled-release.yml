@@ -1,0 +1,58 @@
+name: Scheduled Project Release
+
+on:
+  schedule:
+    # 每天 UTC 16:00（台灣時間 00:00 午夜）執行
+    - cron: '0 16 * * *'
+  workflow_dispatch:  # 也可以手動觸發測試
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check and release scheduled projects
+        run: |
+          # 取得台灣時間的今天日期
+          TODAY=$(TZ='Asia/Taipei' date +%Y-%m-%d)
+          echo "Today (Taiwan): $TODAY"
+
+          # 檢查是否有需要發布的項目
+          SCHEDULED_COUNT=$(jq --arg today "$TODAY" '[.[] | select(.date == $today and .status == "scheduled")] | length' projects.json)
+          echo "Scheduled projects for today: $SCHEDULED_COUNT"
+
+          if [ "$SCHEDULED_COUNT" -gt 0 ]; then
+            # 把今天的 scheduled 改成 done
+            jq --arg today "$TODAY" '
+              map(if .date == $today and .status == "scheduled"
+                  then .status = "done"
+                  else . end)
+            ' projects.json > tmp.json && mv tmp.json projects.json
+
+            echo "Updated projects.json for $TODAY"
+            cat projects.json | jq --arg today "$TODAY" '.[] | select(.date == $today)'
+          else
+            echo "No scheduled projects for today"
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Muripo Bot"
+          git config user.email "action@github.com"
+
+          if git diff --quiet projects.json; then
+            echo "No changes to commit"
+          else
+            git add projects.json
+            git commit -m "🚀 Auto-release: $(TZ='Asia/Taipei' date +%Y-%m-%d) project is now live!"
+            git push
+            echo "Changes pushed successfully"
+          fi

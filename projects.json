@@ -57,13 +57,13 @@
   {
     "date": "2025-12-05",
     "dayIndex": 6,
-    "name": "Day 06",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "json-salon",
+    "tagline": "JSON 美容院 - 讓你的 JSON 煥然一新",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/muripo-day06-json-salon",
+    "demo": "https://tznthou.github.io/muripo-day06-json-salon/",
+    "tags": ["web", "json", "formatter", "mcp"]
   },
   {
     "date": "2025-12-06",
