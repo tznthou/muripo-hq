@@ -60,7 +60,7 @@
     "name": "json-salon",
     "tagline": "JSON 美容院 - 讓你的 JSON 煥然一新",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/muripo-day06-json-salon",
     "demo": "https://tznthou.github.io/muripo-day06-json-salon/",
     "tags": ["web", "json", "formatter", "mcp"]
