@@ -6,6 +6,9 @@ on:
     - cron: '0 16 * * *'
   workflow_dispatch:  # 也可以手動觸發測試
 
+permissions:
+  contents: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
