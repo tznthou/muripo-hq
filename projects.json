@@ -19,7 +19,11 @@
     "status": "done",
     "repo": "https://github.com/tznthou/kebab-rename",
     "demo": "",
-    "tags": ["cli", "rename", "kebab-case"]
+    "tags": [
+      "cli",
+      "rename",
+      "kebab-case"
+    ]
   },
   {
     "date": "2025-12-02",
@@ -30,7 +34,11 @@
     "status": "done",
     "repo": "https://github.com/tznthou/day-03-counter",
     "demo": "",
-    "tags": ["pwa", "counter", "fitness"]
+    "tags": [
+      "pwa",
+      "counter",
+      "fitness"
+    ]
   },
   {
     "date": "2025-12-03",
@@ -41,7 +49,12 @@
     "status": "done",
     "repo": "https://github.com/tznthou/day-04-password",
     "demo": "",
-    "tags": ["password", "generator", "rpg", "gamification"]
+    "tags": [
+      "password",
+      "generator",
+      "rpg",
+      "gamification"
+    ]
   },
   {
     "date": "2025-12-04",
@@ -52,7 +65,12 @@
     "status": "done",
     "repo": "https://github.com/tznthou/ghost-radar",
     "demo": "",
-    "tags": ["cli", "hash", "duplicate", "cleanup"]
+    "tags": [
+      "cli",
+      "hash",
+      "duplicate",
+      "cleanup"
+    ]
   },
   {
     "date": "2025-12-05",
@@ -63,7 +81,12 @@
     "status": "done",
     "repo": "https://github.com/tznthou/muripo-day06-json-salon",
     "demo": "https://tznthou.github.io/muripo-day06-json-salon/",
-    "tags": ["web", "json", "formatter", "mcp"]
+    "tags": [
+      "web",
+      "json",
+      "formatter",
+      "mcp"
+    ]
   },
   {
     "date": "2025-12-06",
@@ -71,10 +94,15 @@
     "name": "neon-drum",
     "tagline": "霓虹動態鼓機 - 用 Webcam 揮手觸發鼓聲",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-07-neon-drum",
     "demo": "https://tznthou.github.io/day-07-neon-drum/",
-    "tags": ["web", "webcam", "audio", "motion-detection"]
+    "tags": [
+      "web",
+      "webcam",
+      "audio",
+      "motion-detection"
+    ]
   },
   {
     "date": "2025-12-07",
