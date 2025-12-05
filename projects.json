@@ -68,13 +68,13 @@
   {
     "date": "2025-12-06",
     "dayIndex": 7,
-    "name": "Day 07",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "neon-drum",
+    "tagline": "霓虹動態鼓機 - 用 Webcam 揮手觸發鼓聲",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-07-neon-drum",
+    "demo": "https://tznthou.github.io/day-07-neon-drum/",
+    "tags": ["web", "webcam", "audio", "motion-detection"]
   },
   {
     "date": "2025-12-07",
