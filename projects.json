@@ -107,13 +107,13 @@
   {
     "date": "2025-12-07",
     "dayIndex": 8,
-    "name": "Day 08",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "game-of-life",
+    "tagline": "Conway 生命遊戲 - d3.js 細胞自動機模擬器",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-08-game-of-life",
+    "demo": "https://tznthou.github.io/day-08-game-of-life/",
+    "tags": ["web", "d3.js", "simulation", "cellular-automata"]
   },
   {
     "date": "2025-12-08",
