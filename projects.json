@@ -110,10 +110,15 @@
     "name": "game-of-life",
     "tagline": "Conway 生命遊戲 - d3.js 細胞自動機模擬器",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-08-game-of-life",
     "demo": "https://tznthou.github.io/day-08-game-of-life/",
-    "tags": ["web", "d3.js", "simulation", "cellular-automata"]
+    "tags": [
+      "web",
+      "d3.js",
+      "simulation",
+      "cellular-automata"
+    ]
   },
   {
     "date": "2025-12-08",
