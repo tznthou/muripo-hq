@@ -126,10 +126,16 @@
     "name": "voice-ripple",
     "tagline": "聲控漣漪鋼琴 — 音你而起的漣漪",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-09-voice-ripple",
     "demo": "https://tznthou.github.io/day-09-voice-ripple/",
-    "tags": ["web", "p5.js", "tone.js", "audio", "microphone"]
+    "tags": [
+      "web",
+      "p5.js",
+      "tone.js",
+      "audio",
+      "microphone"
+    ]
   },
   {
     "date": "2025-12-09",
