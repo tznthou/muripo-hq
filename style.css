@@ -261,6 +261,17 @@ body {
 .type-tag.action { background: #f59e0b; color: black; }
 .type-tag.extension { background: #ec4899; color: white; }
 
+/* Comments */
+.comments-section {
+  margin-bottom: 2rem;
+}
+
+.comments-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
 /* Footer */
 .footer {
   text-align: center;
