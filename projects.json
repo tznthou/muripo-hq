@@ -123,13 +123,13 @@
   {
     "date": "2025-12-08",
     "dayIndex": 9,
-    "name": "Day 09",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "voice-ripple",
+    "tagline": "聲控雨滴鋼琴 — 你的聲音化為漣漪與音符",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-09-voice-ripple",
+    "demo": "https://tznthou.github.io/day-09-voice-ripple/",
+    "tags": ["web", "p5.js", "tone.js", "audio", "microphone"]
   },
   {
     "date": "2025-12-09",
