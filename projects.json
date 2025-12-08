@@ -143,10 +143,17 @@
     "name": "rhythm-catcher",
     "tagline": "AR Rhythm Catcher - 體感節奏捕捉遊戲",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-10-rhythm-catcher",
     "demo": "https://tznthou.github.io/day-10-rhythm-catcher/",
-    "tags": ["web", "canvas", "web-audio", "webcam", "motion-detection", "game"]
+    "tags": [
+      "web",
+      "canvas",
+      "web-audio",
+      "webcam",
+      "motion-detection",
+      "game"
+    ]
   },
   {
     "date": "2025-12-10",
