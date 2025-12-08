@@ -20,6 +20,8 @@
 | 06 | [json-salon](https://github.com/tznthou/muripo-day06-json-salon) | web | JSON 美容院 - 格式化工具 |
 | 07 | [neon-drum](https://github.com/tznthou/day-07-neon-drum) | web | 霓虹動態鼓機 - Webcam 揮手觸發 |
 | 08 | [game-of-life](https://github.com/tznthou/day-08-game-of-life) | web | Conway 生命遊戲 - d3.js 細胞自動機 |
+| 09 | [voice-ripple](https://github.com/tznthou/day-09-voice-ripple) | web | 聲控漣漪鋼琴 - 音你而起的漣漪 |
+| 10 | [rhythm-catcher](https://github.com/tznthou/day-10-rhythm-catcher) | web | AR Rhythm Catcher - 體感節奏捕捉 |
 
 ---
 
