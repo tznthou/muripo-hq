@@ -161,10 +161,15 @@
     "name": "file-organizer",
     "tagline": "檔案整理大師 - 統計報告與大檔案羞辱榜",
     "type": "cli",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-11-file-organizer",
     "demo": "",
-    "tags": ["cli", "python", "rich", "file-management"]
+    "tags": [
+      "cli",
+      "python",
+      "rich",
+      "file-management"
+    ]
   },
   {
     "date": "2025-12-11",
