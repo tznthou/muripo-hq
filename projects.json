@@ -158,13 +158,13 @@
   {
     "date": "2025-12-10",
     "dayIndex": 11,
-    "name": "Day 11",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "file-organizer",
+    "tagline": "檔案整理大師 - 統計報告與大檔案羞辱榜",
+    "type": "cli",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-11-file-organizer",
     "demo": "",
-    "tags": []
+    "tags": ["cli", "python", "rich", "file-management"]
   },
   {
     "date": "2025-12-11",
