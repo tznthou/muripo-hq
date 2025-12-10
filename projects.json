@@ -174,13 +174,13 @@
   {
     "date": "2025-12-11",
     "dayIndex": 12,
-    "name": "Day 12",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "workday",
+    "tagline": "工作日計算器 - 第 N 個工作日，排除台灣假日",
+    "type": "web",
+    "status": "done",
+    "repo": "https://github.com/tznthou/day-12-workday",
+    "demo": "https://tznthou.github.io/day-12-workday/",
+    "tags": ["web", "calculator", "taiwan", "holidays"]
   },
   {
     "date": "2025-12-12",
