@@ -22,6 +22,8 @@
 | 08 | [game-of-life](https://github.com/tznthou/day-08-game-of-life) | web | Conway 生命遊戲 - d3.js 細胞自動機 |
 | 09 | [voice-ripple](https://github.com/tznthou/day-09-voice-ripple) | web | 聲控漣漪鋼琴 - 音你而起的漣漪 |
 | 10 | [rhythm-catcher](https://github.com/tznthou/day-10-rhythm-catcher) | web | AR Rhythm Catcher - 體感節奏捕捉 |
+| 11 | [file-organizer](https://github.com/tznthou/day-11-file-organizer) | cli | 檔案整理大師 - 統計報告與羞辱榜 |
+| 12 | [workday](https://github.com/tznthou/day-12-workday) | web | 工作日計算器 - 排除台灣假日 |
 
 ---
 
