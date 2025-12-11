@@ -9,7 +9,7 @@ tags: [muripo, hq, blog, gallery]
 
 這幾天陸續幫 Muripo HQ 加上了幾個功能，現在終於有個像樣的樣子了：
 
-## 留言板（12/9）
+## 留言板（12/7）
 
 使用 [Giscus](https://giscus.app) 整合 GitHub Discussions，用 GitHub 帳號就能留言。這樣不用自己架後端，也不用管資料庫，完美符合 Muripo 的「最省事」精神。
 
