@@ -58,9 +58,51 @@
 
 ```
 index.html        # 月曆主頁
+blog.html         # Blog 列表
+post.html         # 單篇文章
+gallery.html      # 相簿
 style.css         # 樣式
-script.js         # 渲染邏輯
+script.js         # 月曆渲染邏輯
+blog.js           # Blog 渲染邏輯
+gallery.js        # 相簿渲染邏輯
 projects.json     # 30 天專案資料
+data/
+├── posts.json    # Blog 文章（build 產生）
+└── galleries.json # 相簿資料
+content/
+└── posts/        # Markdown 原稿
+scripts/
+└── build-posts.js # Markdown → JSON
+```
+
+---
+
+## Blog 使用
+
+1. 在 `content/posts/` 建立 Markdown 檔案：
+
+```markdown
+---
+title: 文章標題
+date: 2025-12-11
+excerpt: 一句話摘要
+tags: [標籤1, 標籤2]
+cover: assets/posts/xxx/cover.jpg
+---
+
+文章內容...
+```
+
+2. 執行 build：
+
+```bash
+npm run build:posts
+```
+
+3. Commit 並 push：
+
+```bash
+git add data/posts.json && git commit -m "新增文章" && git push
 ```
 
 ---

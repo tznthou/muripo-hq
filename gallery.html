@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>相簿 - Muripo HQ</title>
+  <meta name="description" content="Muripo HQ 相簿 - 專案截圖與生活相簿">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <header class="hero">
+      <h1><a href="index.html" style="color: inherit; text-decoration: none;">Muripo HQ</a></h1>
+      <p class="tagline">相簿</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">月曆</a>
+      <span class="nav-divider">|</span>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <span class="nav-divider">|</span>
+      <a href="gallery.html" class="nav-link active">相簿</a>
+    </nav>
+
+    <!-- Tab Switcher -->
+    <div class="gallery-tabs">
+      <button class="tab-btn active" data-tab="projects">專案截圖</button>
+      <button class="tab-btn" data-tab="life">生活相簿</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid" id="gallery-grid">
+      <!-- Rendered by gallery.js -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        <a href="https://github.com/tznthou/muripo-hq" target="_blank">GitHub Repo</a>
+        · MIT License
+      </p>
+    </footer>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "hq",
+  "version": "1.0.0",
+  "description": "> 用最不正經的方式，做最省事的工具。",
+  "main": "script.js",
+  "scripts": {
+    "build:posts": "node scripts/build-posts.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tznthou/muripo-hq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tznthou/muripo-hq/issues"
+  },
+  "homepage": "https://github.com/tznthou/muripo-hq#readme",
+  "devDependencies": {
+    "marked": "^17.0.1"
+  }
+}
