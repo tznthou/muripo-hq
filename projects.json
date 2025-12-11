@@ -185,13 +185,13 @@
   {
     "date": "2025-12-12",
     "dayIndex": 13,
-    "name": "Day 13",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "cyber-glitch",
+    "tagline": "網頁現實駭客 - 把任何網站變成 Cyberpunk 故障模式",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-13-cyber-glitch",
+    "demo": "https://tznthou.github.io/day-13-cyber-glitch/",
+    "tags": ["web", "bookmarklet", "glitch", "cyberpunk"]
   },
   {
     "date": "2025-12-13",
