@@ -1,4 +1,15 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "dayIndex": 13,
+      "name": "cyber-glitch",
+      "images": [
+        {
+          "src": "assets/projects/day-13/day-13-cyber-glitch.webp",
+          "caption": "day-13-cyber-glitch"
+        }
+      ]
+    }
+  ],
   "life": []
 }
