@@ -187,7 +187,7 @@
     "dayIndex": 13,
     "name": "cyber-glitch",
     "tagline": "網頁現實駭客 - 把任何網站變成 Cyberpunk 故障模式",
-    "type": "ext",
+    "type": "extension",
     "status": "done",
     "repo": "https://github.com/tznthou/day-13-cyber-glitch",
     "demo": "https://tznthou.github.io/day-13-cyber-glitch/",
