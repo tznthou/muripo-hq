@@ -5,6 +5,8 @@
   "main": "script.js",
   "scripts": {
     "build:posts": "node scripts/build-posts.js",
+    "build:galleries": "node scripts/build-galleries.js",
+    "build": "npm run build:posts && npm run build:galleries",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

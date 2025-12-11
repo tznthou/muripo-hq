@@ -79,7 +79,7 @@ scripts/
 
 ## Blog 使用
 
-1. 在 `content/posts/` 建立 Markdown 檔案：
+1. 在 `content/posts/` 建立 Markdown 檔案（格式：`YYYY-MM-DD-slug.md`）：
 
 ```markdown
 ---
@@ -90,7 +90,7 @@ tags: [標籤1, 標籤2]
 cover: assets/posts/xxx/cover.jpg
 ---
 
-文章內容...
+文章內容（支援完整 Markdown 語法）...
 ```
 
 2. 執行 build：
@@ -103,6 +103,44 @@ npm run build:posts
 
 ```bash
 git add data/posts.json && git commit -m "新增文章" && git push
+```
+
+---
+
+## 相簿使用（超簡單版）
+
+只要放圖片，執行 build，就完成了！
+
+### 專案截圖
+
+```bash
+# 1. 放圖片
+assets/projects/day-01/screenshot.png
+
+# 2. Build
+npm run build:galleries
+
+# 3. Push
+git add . && git commit -m "新增截圖" && git push
+```
+
+### 生活相簿
+
+```bash
+# 1. 放圖片（資料夾名稱 = 日期-標題）
+assets/gallery/2025-12-台北散步/01.jpg
+assets/gallery/2025-12-台北散步/02.jpg
+
+# 2. Build
+npm run build:galleries
+
+# 3. Push
+git add . && git commit -m "新增相簿" && git push
+```
+
+**進階**：在相簿資料夾放 `meta.json` 可自訂標題和日期：
+```json
+{ "title": "台北一日遊", "date": "2025-12-10" }
 ```
 
 ---
