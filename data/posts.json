@@ -1,5 +1,20 @@
 [
   {
+    "slug": "2025-12-12-cyber-glitch",
+    "title": "Day 13：當你無法消滅廣告，就消滅它的現實",
+    "date": "2025-12-12",
+    "excerpt": "每個網頁都是別人精心設計的現實，但誰說你不能打破它？",
+    "tags": [
+      "muripo",
+      "day-13",
+      "bookmarklet",
+      "glitch",
+      "cyberpunk"
+    ],
+    "cover": "",
+    "content": "<p>你有沒有那種經驗？</p>\n<p>打開一個網頁，廣告從四面八方跳出來。蓋住你要看的內容、自動播放影片、還會跟著你滾動。你想關掉它，但關閉按鈕小到像在考驗視力。</p>\n<p>那一瞬間，你真的很想一拳砸爛螢幕。</p>\n<p>但理智告訴你：螢幕很貴，而且砸了也沒用，廣告還是在那裡。</p>\n<h2>如果不能消滅廣告，那就消滅它的「現實」</h2>\n<p>每個網頁，都是別人精心設計的「現實」。</p>\n<p>排版、顏色、動畫、廣告位置 — 這些都是設計者決定的。你只能被動接受，照著他們的規則瀏覽。</p>\n<p>但如果有個工具，能讓你暫時打破這個現實呢？</p>\n<h2>CYBER_REALITY_GLITCHER</h2>\n<p>這就是 Day 13 的專案：一個 Bookmarklet，讓你對任何網頁進行「賽博龐克式破壞」。</p>\n<p>三種破壞模式：</p>\n<h3>📝 資料擾亂</h3>\n<p>滑鼠移到文字上，文字會逐漸崩解成亂碼。那些煩人的廣告標語？讓它們變成無意義的符號。</p>\n<h3>🖼️ 視覺破壞</h3>\n<p>滑鼠移到圖片上，觸發 RGB 色差分離、畫面抖動、隨機反色。精美的廣告圖？現在看起來像壞掉的顯示器。</p>\n<h3>💀 元素消除</h3>\n<p>點擊任何東西，它會旋轉、縮小、然後消失。廣告？刪除。彈窗？刪除。任何礙眼的東西？全部刪除。</p>\n<h2>這不是 Ad Blocker</h2>\n<p>Ad Blocker 是理性的解決方案。它安靜地過濾廣告，你甚至不會注意到。</p>\n<p>但 Cyber Glitch 不一樣。它是情緒的出口。</p>\n<p>當你看到惱人的廣告，你不只是想讓它消失 — 你想親手毀掉它。看著它扭曲、崩解、旋轉著消失，有一種莫名的爽感。</p>\n<p>這就是「體驗上的破壞」。</p>\n<h2>使用方式</h2>\n<p>把 Bookmarklet 拖到書籤列，在任何網頁點一下，就能進入破壞模式。</p>\n<p><a href=\"https://tznthou.github.io/day-13-cyber-glitch/\">試試看 →</a></p>\n<hr>\n<p>每個人都需要一個合法發洩的管道。</p>\n<p>有人去健身房，有人打電動，而我選擇用程式碼毀掉網頁上的廣告。</p>\n<p>這就是 Muripo 精神：用最不正經的方式，解決最惱人的問題。</p>\n"
+  },
+  {
     "slug": "2025-12-11-hq-upgrade",
     "title": "HQ 大升級：Blog、相簿、留言板",
     "date": "2025-12-11",
@@ -11,6 +26,6 @@
       "gallery"
     ],
     "cover": "",
-    "content": "<p>30 天 30 Repo 挑戰來到了 Day 12。</p>\n<p>這幾天陸續幫 Muripo HQ 加上了幾個功能，現在終於有個像樣的樣子了：</p>\n<h2>留言板（12/9）</h2>\n<p>使用 <a href=\"https://giscus.app\">Giscus</a> 整合 GitHub Discussions，用 GitHub 帳號就能留言。這樣不用自己架後端，也不用管資料庫，完美符合 Muripo 的「最省事」精神。</p>\n<h2>Blog（12/11）</h2>\n<p>你現在看到的就是它。</p>\n<p>原本只有月曆，但每天做一個專案，總會有些心得想記錄。不想用 Jekyll 那麼重，所以自己寫了一個超簡單的 Markdown → JSON 轉換器：</p>\n<ol>\n<li>寫 Markdown 放到 <code>content/posts/</code></li>\n<li>跑 <code>npm run build:posts</code></li>\n<li>Push</li>\n</ol>\n<p>就這樣，沒有更多了。</p>\n<h2>相簿（12/11）</h2>\n<p>有時候想放專案截圖或生活照，所以加了相簿功能。同樣是超簡單版：</p>\n<ol>\n<li>放圖片到資料夾</li>\n<li>跑 <code>npm run build:galleries</code></li>\n<li>Push</li>\n</ol>\n<p>Script 會自動掃描資料夾、產生 JSON。連手動編輯 JSON 都不用。</p>\n<hr>\n<p>這三個功能加起來，HQ 現在可以：</p>\n<ul>\n<li><strong>月曆</strong>：展示 30 天專案進度</li>\n<li><strong>Blog</strong>：記錄心得</li>\n<li><strong>相簿</strong>：放截圖和照片</li>\n<li><strong>留言板</strong>：讓大家互動</li>\n</ul>\n<p>應該夠用了。繼續趕專案去。</p>\n"
+    "content": "<p>30 天 30 Repo 挑戰來到了 Day 12。</p>\n<p>這幾天陸續幫 Muripo HQ 加上了幾個功能，現在終於有個像樣的樣子了：</p>\n<h2>留言板（12/7）</h2>\n<p>使用 <a href=\"https://giscus.app\">Giscus</a> 整合 GitHub Discussions，用 GitHub 帳號就能留言。這樣不用自己架後端，也不用管資料庫，完美符合 Muripo 的「最省事」精神。</p>\n<h2>Blog（12/11）</h2>\n<p>你現在看到的就是它。</p>\n<p>原本只有月曆，但每天做一個專案，總會有些心得想記錄。不想用 Jekyll 那麼重，所以自己寫了一個超簡單的 Markdown → JSON 轉換器：</p>\n<ol>\n<li>寫 Markdown 放到 <code>content/posts/</code></li>\n<li>跑 <code>npm run build:posts</code></li>\n<li>Push</li>\n</ol>\n<p>就這樣，沒有更多了。</p>\n<h2>相簿（12/11）</h2>\n<p>有時候想放專案截圖或生活照，所以加了相簿功能。同樣是超簡單版：</p>\n<ol>\n<li>放圖片到資料夾</li>\n<li>跑 <code>npm run build:galleries</code></li>\n<li>Push</li>\n</ol>\n<p>Script 會自動掃描資料夾、產生 JSON。連手動編輯 JSON 都不用。</p>\n<hr>\n<p>這三個功能加起來，HQ 現在可以：</p>\n<ul>\n<li><strong>月曆</strong>：展示 30 天專案進度</li>\n<li><strong>Blog</strong>：記錄心得</li>\n<li><strong>相簿</strong>：放截圖和照片</li>\n<li><strong>留言板</strong>：讓大家互動</li>\n</ul>\n<p>應該夠用了。繼續趕專案去。</p>\n"
   }
 ]
