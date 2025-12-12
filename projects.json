@@ -196,13 +196,13 @@
   {
     "date": "2025-12-13",
     "dayIndex": 14,
-    "name": "Day 14",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "simple-console-mcp",
+    "tagline": "極簡 Console MCP - 瀏覽器除錯的最小單位",
+    "type": "mcp",
+    "status": "done",
+    "repo": "https://github.com/tznthou/simple-console-mcp",
+    "demo": "https://www.npmjs.com/package/simple-console-mcp",
+    "tags": ["mcp", "chrome", "devtools", "puppeteer", "debugging"]
   },
   {
     "date": "2025-12-14",
