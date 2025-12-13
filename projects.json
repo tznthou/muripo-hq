@@ -180,7 +180,12 @@
     "status": "done",
     "repo": "https://github.com/tznthou/day-12-workday",
     "demo": "https://tznthou.github.io/day-12-workday/",
-    "tags": ["web", "calculator", "taiwan", "holidays"]
+    "tags": [
+      "web",
+      "calculator",
+      "taiwan",
+      "holidays"
+    ]
   },
   {
     "date": "2025-12-12",
@@ -191,7 +196,12 @@
     "status": "done",
     "repo": "https://github.com/tznthou/day-13-cyber-glitch",
     "demo": "https://tznthou.github.io/day-13-cyber-glitch/",
-    "tags": ["web", "bookmarklet", "glitch", "cyberpunk"]
+    "tags": [
+      "web",
+      "bookmarklet",
+      "glitch",
+      "cyberpunk"
+    ]
   },
   {
     "date": "2025-12-13",
@@ -202,7 +212,13 @@
     "status": "done",
     "repo": "https://github.com/tznthou/simple-console-mcp",
     "demo": "https://www.npmjs.com/package/simple-console-mcp",
-    "tags": ["mcp", "chrome", "devtools", "puppeteer", "debugging"]
+    "tags": [
+      "mcp",
+      "chrome",
+      "devtools",
+      "puppeteer",
+      "debugging"
+    ]
   },
   {
     "date": "2025-12-14",
@@ -210,10 +226,15 @@
     "name": "holo-card",
     "tagline": "Holo-Card Studio - 3D 全息卡片產生器",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/holo-card",
     "demo": "https://tznthou.github.io/holo-card/",
-    "tags": ["web", "css-3d", "holographic", "card-generator"]
+    "tags": [
+      "web",
+      "css-3d",
+      "holographic",
+      "card-generator"
+    ]
   },
   {
     "date": "2025-12-15",
