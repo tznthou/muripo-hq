@@ -11,6 +11,8 @@ tags: [muripo, day-14, mcp, npm, milestone]
 
 **394**
 
+![NPM 下載數 394](assets/projects/day-14/day-14-simple-console-npm-394.webp)
+
 不到 24 小時。394 次下載。
 
 好啦，其中有 2-3 次是我自己在測試。但剩下的 390 多次...是真的有人在下載欸！
