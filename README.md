@@ -24,6 +24,9 @@
 | 10 | [rhythm-catcher](https://github.com/tznthou/day-10-rhythm-catcher) | web | AR Rhythm Catcher - 體感節奏捕捉 |
 | 11 | [file-organizer](https://github.com/tznthou/day-11-file-organizer) | cli | 檔案整理大師 - 統計報告與羞辱榜 |
 | 12 | [workday](https://github.com/tznthou/day-12-workday) | web | 工作日計算器 - 排除台灣假日 |
+| 13 | [cyber-glitch](https://github.com/tznthou/day-13-cyber-glitch) | extension | 網頁現實駭客 - Cyberpunk 故障模式 |
+| 14 | [simple-console-mcp](https://github.com/tznthou/simple-console-mcp) | mcp | 極簡 Console MCP - 瀏覽器除錯工具 |
+| 15 | [holo-card](https://github.com/tznthou/holo-card) | web | Holo-Card Studio - 3D 全息卡片產生器 |
 
 ---
 
@@ -41,6 +44,7 @@
 |------|------|
 | `cli` | 命令列工具 |
 | `web` | 網頁應用 |
+| `mcp` | MCP Server |
 | `action` | GitHub Action |
 | `extension` | 瀏覽器擴充 |
 
