@@ -9,6 +9,16 @@
           "caption": "day-13-cyber-glitch"
         }
       ]
+    },
+    {
+      "dayIndex": 15,
+      "name": "holo-card",
+      "images": [
+        {
+          "src": "assets/projects/day-15/day-15-holo-card.webp",
+          "caption": "Holo-Card Studio"
+        }
+      ]
     }
   ],
   "life": []
