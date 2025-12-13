@@ -11,6 +11,16 @@
       ]
     },
     {
+      "dayIndex": 14,
+      "name": "simple-console-mcp",
+      "images": [
+        {
+          "src": "assets/projects/day-14/day-14-simple-console-npm-394.webp",
+          "caption": "NPM 下載數 394 — 不到 24 小時的里程碑"
+        }
+      ]
+    },
+    {
       "dayIndex": 15,
       "name": "holo-card",
       "images": [
