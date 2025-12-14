@@ -29,6 +29,20 @@
           "caption": "Holo-Card Studio"
         }
       ]
+    },
+    {
+      "dayIndex": 16,
+      "name": "font-mixer",
+      "images": [
+        {
+          "src": "assets/projects/day-16/day-16-font-mixer-1.webp",
+          "caption": "字型調酒師 — 氛圍選擇介面"
+        },
+        {
+          "src": "assets/projects/day-16/day-16-font-mixer-2.webp",
+          "caption": "字型配對預覽"
+        }
+      ]
     }
   ],
   "life": []
