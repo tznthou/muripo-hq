@@ -242,10 +242,16 @@
     "name": "font-mixer",
     "tagline": "字型調酒師 - 基於氛圍的字型配對工具",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-16-font-mixer",
     "demo": "https://tznthou.github.io/day-16-font-mixer/",
-    "tags": ["web", "fonts", "css", "google-fonts", "typography"]
+    "tags": [
+      "web",
+      "fonts",
+      "css",
+      "google-fonts",
+      "typography"
+    ]
   },
   {
     "date": "2025-12-16",
