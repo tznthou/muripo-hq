@@ -27,6 +27,8 @@
 | 13 | [cyber-glitch](https://github.com/tznthou/day-13-cyber-glitch) | extension | 網頁現實駭客 - Cyberpunk 故障模式 |
 | 14 | [simple-console-mcp](https://github.com/tznthou/simple-console-mcp) | mcp | 極簡 Console MCP - 瀏覽器除錯工具 |
 | 15 | [holo-card](https://github.com/tznthou/holo-card) | web | Holo-Card Studio - 3D 全息卡片產生器 |
+| 16 | [font-mixer](https://github.com/tznthou/day-16-font-mixer) | web | 字型調酒師 - 基於氛圍的字型配對 |
+| 17 | [aura-moods](https://github.com/tznthou/day-17-aura-moods) | web | 動態氛圍色票 - Mesh Gradient CSS |
 
 ---
 
