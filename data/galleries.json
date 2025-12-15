@@ -43,6 +43,16 @@
           "caption": "字型配對預覽"
         }
       ]
+    },
+    {
+      "dayIndex": 17,
+      "name": "aura-moods",
+      "images": [
+        {
+          "src": "assets/projects/day-17/day-17-aura-moods.webp",
+          "caption": "Aura Moods 氛圍色票"
+        }
+      ]
     }
   ],
   "life": []
