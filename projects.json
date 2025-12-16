@@ -267,13 +267,13 @@
   {
     "date": "2025-12-17",
     "dayIndex": 18,
-    "name": "Day 18",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "landing-page",
+    "tagline": "我的產品 Landing Page",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-18-landing-page",
+    "demo": "https://tznthou.github.io/day-18-landing-page/",
+    "tags": ["web", "landing-page", "vanilla-js", "responsive"]
   },
   {
     "date": "2025-12-18",
