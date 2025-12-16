@@ -33,4 +33,4 @@ tags: [muripo, day-17, visual, color, vibe, css]
 
 當然，如果你有自己喜歡的特殊色票，也可以自己加進去。這就是這個專案的開放性：你的想像力，就是它的邊界。
 
-[試試看 →](https://tznthou.github.io/aura-moods/)
+[試試看 →](https://tznthou.github.io/day-17-aura-moods/)
