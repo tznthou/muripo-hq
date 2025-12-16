@@ -1,0 +1,43 @@
+name: Auto Build Posts
+
+on:
+  push:
+    paths:
+      - 'content/posts/**/*.md'
+  workflow_dispatch:  # 手動觸發
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build posts.json
+        run: npm run build:posts
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Muripo Bot"
+          git config user.email "action@github.com"
+
+          if git diff --quiet data/posts.json; then
+            echo "No changes to commit"
+          else
+            git add data/posts.json
+            git commit -m "build: auto-rebuild posts.json"
+            git push
+            echo "posts.json updated successfully"
+          fi
