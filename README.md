@@ -29,6 +29,7 @@
 | 15 | [holo-card](https://github.com/tznthou/holo-card) | web | Holo-Card Studio - 3D 全息卡片產生器 |
 | 16 | [font-mixer](https://github.com/tznthou/day-16-font-mixer) | web | 字型調酒師 - 基於氛圍的字型配對 |
 | 17 | [aura-moods](https://github.com/tznthou/day-17-aura-moods) | web | 動態氛圍色票 - Mesh Gradient CSS |
+| 18 | [landing-page](https://github.com/tznthou/day-18-landing-page) | web | 我的產品 Landing Page |
 
 ---
 
