@@ -7,6 +7,8 @@
     "build:posts": "node scripts/build-posts.js",
     "build:galleries": "node scripts/build-galleries.js",
     "build": "npm run build:posts && npm run build:galleries",
+    "galaxy": "node scripts/generate-galaxy.js",
+    "galaxy:demo": "node scripts/generate-galaxy.js --demo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

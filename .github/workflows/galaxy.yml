@@ -1,0 +1,52 @@
+name: Update Stargazer Galaxy
+
+on:
+  # 當有人 star/unstar 時觸發
+  watch:
+    types: [started]
+
+  # 每日 UTC 00:00 同步一次（防止遺漏）
+  schedule:
+    - cron: '0 0 * * *'
+
+  # 手動觸發
+  workflow_dispatch:
+
+# 避免同時多個 workflow 執行
+concurrency:
+  group: galaxy-update
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    # 只在 star 事件（不是 unstar）或其他觸發方式時執行
+    if: github.event_name != 'watch' || github.event.action == 'started'
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate galaxy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: node scripts/generate-galaxy.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/galaxy.svg
+          git diff --staged --quiet || git commit -m "✨ Update stargazer galaxy [skip ci]"
+          git push
