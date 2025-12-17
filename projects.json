@@ -292,10 +292,15 @@
     "name": "stargazer-galaxy",
     "tagline": "星光共同體 - 把 Stargazers 變成銀河中的恆星",
     "type": "action",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-19-stargazer-galaxy",
     "demo": "",
-    "tags": ["github-action", "svg", "fibonacci", "automation"]
+    "tags": [
+      "github-action",
+      "svg",
+      "fibonacci",
+      "automation"
+    ]
   },
   {
     "date": "2025-12-19",
