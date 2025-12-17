@@ -6,7 +6,7 @@
 
 🔗 **[前往 Muripo HQ](https://tznthou.github.io/muripo-hq/)**
 
-![Stargazer Galaxy](assets/galaxy.svg)
+![Stargazer Galaxy](assets/galaxy.png)
 
 > ⭐ **Star 這個 Repo，你就會出現在銀河裡！**
 

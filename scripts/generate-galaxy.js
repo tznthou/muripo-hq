@@ -1,11 +1,13 @@
 /**
  * Stargazer Galaxy Generator
  * 把 GitHub Stargazers 變成銀河系的星星
+ * 輸出 PNG 格式（解決 GitHub SVG 外部圖片限制）
  */
 
-import { writeFileSync } from 'fs';
+import { writeFileSync, mkdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import puppeteer from 'puppeteer';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -142,56 +144,21 @@ function getDemoData() {
 }
 
 // ============================================
-// 生成 SVG
+// 生成 HTML（用於 Puppeteer 渲染）
 // ============================================
-function generateSVG(stargazers) {
+function generateHTML(stargazers) {
   const stars = stargazers.map((user, index) => {
     const pos = calculatePosition(index, user.username);
     const colorIndex = user.username.length % CONFIG.glowColors.length;
     const glowColor = CONFIG.glowColors[colorIndex];
 
     return `
-    <g class="star" data-user="${user.username}">
-      <!-- 光暈 -->
-      <circle
-        cx="${pos.x}"
-        cy="${pos.y}"
-        r="${CONFIG.glowSize / 2}"
-        fill="url(#glow-${colorIndex})"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-${user.username}">
-        <circle cx="${pos.x}" cy="${pos.y}" r="${CONFIG.starSize / 2}" />
-      </clipPath>
-      <image
-        href="${user.avatarUrl}?s=${CONFIG.starSize * 2}"
-        x="${pos.x - CONFIG.starSize / 2}"
-        y="${pos.y - CONFIG.starSize / 2}"
-        width="${CONFIG.starSize}"
-        height="${CONFIG.starSize}"
-        clip-path="url(#clip-${user.username})"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="${pos.x}"
-        cy="${pos.y}"
-        r="${CONFIG.starSize / 2}"
-        fill="none"
-        stroke="${glowColor}"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>`;
+    <div class="star" style="left: ${pos.x}px; top: ${pos.y}px;">
+      <div class="glow" style="background: radial-gradient(circle, ${glowColor}cc 0%, ${glowColor}4d 50%, transparent 70%);"></div>
+      <img src="${user.avatarUrl}?s=${CONFIG.starSize * 2}" alt="${user.username}" />
+      <div class="border" style="border-color: ${glowColor};"></div>
+    </div>`;
   }).join('\n');
-
-  const glowGradients = CONFIG.glowColors.map((color, index) => `
-    <radialGradient id="glow-${index}">
-      <stop offset="0%" stop-color="${color}" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="${color}" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="${color}" stop-opacity="0" />
-    </radialGradient>`).join('\n');
 
   // 生成背景星點
   const bgStars = Array.from({ length: 150 }, () => {
@@ -199,57 +166,158 @@ function generateSVG(stargazers) {
     const y = Math.random() * CONFIG.height;
     const r = Math.random() * 1.2 + 0.3;
     const opacity = Math.random() * 0.6 + 0.2;
-    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="white" opacity="${opacity.toFixed(2)}" />`;
+    return `<div class="bg-star" style="left: ${x.toFixed(1)}px; top: ${y.toFixed(1)}px; width: ${r * 2}px; height: ${r * 2}px; opacity: ${opacity.toFixed(2)};"></div>`;
   }).join('\n');
 
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${CONFIG.width} ${CONFIG.height}" width="${CONFIG.width}" height="${CONFIG.height}">
-  <defs>
-    <!-- 背景漸層 -->
-    <radialGradient id="bg-gradient" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#1a1f35" />
-      <stop offset="50%" stop-color="#0d1117" />
-      <stop offset="100%" stop-color="#010409" />
-    </radialGradient>
+  return `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <!-- 中心光暈 -->
-    <radialGradient id="center-glow">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.15" />
-      <stop offset="40%" stop-color="#a371f7" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#0d1117" stop-opacity="0" />
-    </radialGradient>
+    body {
+      width: ${CONFIG.width}px;
+      height: ${CONFIG.height}px;
+      background: radial-gradient(ellipse at center, #1a1f35 0%, #0d1117 50%, #010409 100%);
+      position: relative;
+      overflow: hidden;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
 
-    <!-- 星星光暈漸層 -->
-    ${glowGradients}
-  </defs>
+    .center-glow {
+      position: absolute;
+      left: ${CONFIG.centerX - 280}px;
+      top: ${CONFIG.centerY - 200}px;
+      width: 560px;
+      height: 400px;
+      background: radial-gradient(ellipse at center,
+        rgba(88, 166, 255, 0.15) 0%,
+        rgba(163, 113, 247, 0.08) 40%,
+        transparent 70%);
+      border-radius: 50%;
+    }
 
-  <!-- 背景 -->
-  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+    .bg-star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+    }
 
-  <!-- 背景星點 -->
-  <g class="background-stars">
-    ${bgStars}
-  </g>
+    .star {
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
 
-  <!-- 中心光暈 -->
-  <ellipse cx="${CONFIG.centerX}" cy="${CONFIG.centerY}" rx="280" ry="200" fill="url(#center-glow)" />
+    .star .glow {
+      position: absolute;
+      width: ${CONFIG.glowSize}px;
+      height: ${CONFIG.glowSize}px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      opacity: 0.6;
+    }
 
-  <!-- Stargazers -->
-  <g class="stargazers">
-    ${stars}
-  </g>
+    .star img {
+      width: ${CONFIG.starSize}px;
+      height: ${CONFIG.starSize}px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
 
-  <!-- 標題 -->
-  <text x="${CONFIG.width / 2}" y="30" text-anchor="middle" fill="#8b949e" font-family="system-ui, sans-serif" font-size="12">
-    ✨ ${stargazers.length} Stargazers Galaxy ✨
-  </text>
+    .star .border {
+      position: absolute;
+      width: ${CONFIG.starSize}px;
+      height: ${CONFIG.starSize}px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1.5px solid;
+      border-radius: 50%;
+      opacity: 0.8;
+      z-index: 2;
+      pointer-events: none;
+    }
 
-  <!-- 說明文字 -->
-  <text x="${CONFIG.width / 2}" y="${CONFIG.height - 12}" text-anchor="middle" fill="#484f58" font-family="system-ui, sans-serif" font-size="10">
-    Star this repo to join the galaxy!
-  </text>
-</svg>`;
+    .title {
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #8b949e;
+      font-size: 12px;
+      text-align: center;
+    }
 
-  return svg;
+    .subtitle {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #484f58;
+      font-size: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  ${bgStars}
+  <div class="center-glow"></div>
+  ${stars}
+  <div class="title">✨ ${stargazers.length} Stargazers Galaxy ✨</div>
+  <div class="subtitle">Star this repo to join the galaxy!</div>
+</body>
+</html>`;
+}
+
+// ============================================
+// 使用 Puppeteer 渲染 PNG
+// ============================================
+async function renderToPNG(html, outputPath) {
+  console.log('🚀 Launching browser...');
+
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+
+  const page = await browser.newPage();
+  await page.setViewport({ width: CONFIG.width, height: CONFIG.height });
+
+  console.log('📄 Loading HTML...');
+  await page.setContent(html, { waitUntil: 'networkidle0' });
+
+  // 等待所有圖片載入
+  console.log('🖼️  Waiting for images...');
+  await page.evaluate(async () => {
+    const images = document.querySelectorAll('img');
+    await Promise.all(
+      Array.from(images).map(img => {
+        if (img.complete) return Promise.resolve();
+        return new Promise((resolve) => {
+          img.onload = resolve;
+          img.onerror = resolve; // 即使失敗也繼續
+        });
+      })
+    );
+  });
+
+  // 額外等待確保渲染完成
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  console.log('📸 Taking screenshot...');
+  await page.screenshot({
+    path: outputPath,
+    type: 'png',
+    omitBackground: false
+  });
+
+  await browser.close();
+  console.log(`✅ PNG saved to ${outputPath}`);
 }
 
 // ============================================
@@ -272,12 +340,15 @@ async function main() {
   }
 
   console.log('🎨 Generating galaxy...');
-  const svg = generateSVG(stargazers);
+  const html = generateHTML(stargazers);
 
-  const outputPath = join(__dirname, '..', 'assets', 'galaxy.svg');
-  writeFileSync(outputPath, svg);
+  // 確保 assets 目錄存在
+  const assetsDir = join(__dirname, '..', 'assets');
+  mkdirSync(assetsDir, { recursive: true });
 
-  console.log(`✅ Galaxy saved to ${outputPath}`);
+  const outputPath = join(assetsDir, 'galaxy.png');
+  await renderToPNG(html, outputPath);
+
   console.log(`🌟 Total stars in galaxy: ${stargazers.length}`);
 }
 

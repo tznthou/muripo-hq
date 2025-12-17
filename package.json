@@ -24,5 +24,8 @@
   "homepage": "https://github.com/tznthou/muripo-hq#readme",
   "devDependencies": {
     "marked": "^17.0.1"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
   }
 }
