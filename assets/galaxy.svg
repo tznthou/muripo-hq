@@ -1,0 +1,1073 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- 背景漸層 -->
+    <radialGradient id="bg-gradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1f35" />
+      <stop offset="50%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#010409" />
+    </radialGradient>
+
+    <!-- 中心光暈 -->
+    <radialGradient id="center-glow">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.15" />
+      <stop offset="40%" stop-color="#a371f7" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 星星光暈漸層 -->
+    
+    <radialGradient id="glow-0">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-1">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#a371f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-2">
+      <stop offset="0%" stop-color="#f778ba" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#f778ba" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#f778ba" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-3">
+      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7ee787" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7ee787" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-4">
+      <stop offset="0%" stop-color="#ffa657" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#ffa657" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffa657" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+
+  <!-- 背景星點 -->
+  <g class="background-stars">
+    <circle cx="472.2" cy="378.9" r="0.4" fill="white" opacity="0.68" />
+<circle cx="368.0" cy="295.4" r="0.9" fill="white" opacity="0.75" />
+<circle cx="47.9" cy="106.5" r="0.6" fill="white" opacity="0.57" />
+<circle cx="208.8" cy="185.5" r="1.4" fill="white" opacity="0.42" />
+<circle cx="513.5" cy="213.6" r="0.8" fill="white" opacity="0.75" />
+<circle cx="574.2" cy="83.5" r="0.9" fill="white" opacity="0.43" />
+<circle cx="654.4" cy="554.6" r="1.4" fill="white" opacity="0.42" />
+<circle cx="369.7" cy="564.1" r="0.5" fill="white" opacity="0.53" />
+<circle cx="578.1" cy="100.8" r="0.5" fill="white" opacity="0.58" />
+<circle cx="364.4" cy="55.3" r="1.2" fill="white" opacity="0.58" />
+<circle cx="785.1" cy="530.7" r="1.3" fill="white" opacity="0.62" />
+<circle cx="487.2" cy="15.7" r="0.6" fill="white" opacity="0.44" />
+<circle cx="170.5" cy="477.0" r="0.5" fill="white" opacity="0.22" />
+<circle cx="141.5" cy="44.4" r="0.5" fill="white" opacity="0.76" />
+<circle cx="779.5" cy="256.6" r="0.7" fill="white" opacity="0.80" />
+<circle cx="9.7" cy="21.0" r="0.9" fill="white" opacity="0.22" />
+<circle cx="628.3" cy="599.1" r="1.3" fill="white" opacity="0.37" />
+<circle cx="461.2" cy="517.6" r="0.6" fill="white" opacity="0.39" />
+<circle cx="2.5" cy="529.1" r="1.1" fill="white" opacity="0.50" />
+<circle cx="47.2" cy="593.6" r="0.4" fill="white" opacity="0.32" />
+<circle cx="299.5" cy="420.2" r="0.8" fill="white" opacity="0.40" />
+<circle cx="589.1" cy="0.8" r="1.3" fill="white" opacity="0.60" />
+<circle cx="72.4" cy="209.4" r="0.9" fill="white" opacity="0.54" />
+<circle cx="16.6" cy="544.3" r="1.3" fill="white" opacity="0.75" />
+<circle cx="65.2" cy="439.3" r="0.6" fill="white" opacity="0.56" />
+<circle cx="239.7" cy="159.3" r="0.9" fill="white" opacity="0.46" />
+<circle cx="555.8" cy="585.1" r="0.6" fill="white" opacity="0.23" />
+<circle cx="227.7" cy="544.0" r="0.5" fill="white" opacity="0.32" />
+<circle cx="111.9" cy="355.3" r="1.4" fill="white" opacity="0.43" />
+<circle cx="239.7" cy="202.4" r="1.4" fill="white" opacity="0.57" />
+<circle cx="314.2" cy="525.4" r="0.3" fill="white" opacity="0.68" />
+<circle cx="641.1" cy="66.9" r="0.4" fill="white" opacity="0.20" />
+<circle cx="697.6" cy="389.4" r="0.6" fill="white" opacity="0.61" />
+<circle cx="228.6" cy="510.8" r="0.9" fill="white" opacity="0.76" />
+<circle cx="545.8" cy="521.8" r="0.6" fill="white" opacity="0.31" />
+<circle cx="155.5" cy="213.3" r="1.4" fill="white" opacity="0.70" />
+<circle cx="58.4" cy="58.6" r="0.5" fill="white" opacity="0.64" />
+<circle cx="80.2" cy="587.0" r="1.4" fill="white" opacity="0.47" />
+<circle cx="382.3" cy="510.1" r="1.0" fill="white" opacity="0.49" />
+<circle cx="530.2" cy="474.9" r="0.8" fill="white" opacity="0.73" />
+<circle cx="753.8" cy="594.3" r="0.5" fill="white" opacity="0.32" />
+<circle cx="38.4" cy="124.5" r="1.3" fill="white" opacity="0.49" />
+<circle cx="141.8" cy="568.3" r="1.4" fill="white" opacity="0.23" />
+<circle cx="145.5" cy="421.1" r="0.6" fill="white" opacity="0.52" />
+<circle cx="37.2" cy="440.2" r="0.7" fill="white" opacity="0.28" />
+<circle cx="196.9" cy="231.6" r="1.1" fill="white" opacity="0.46" />
+<circle cx="589.1" cy="277.5" r="0.3" fill="white" opacity="0.46" />
+<circle cx="481.0" cy="312.9" r="0.9" fill="white" opacity="0.48" />
+<circle cx="284.8" cy="72.3" r="0.6" fill="white" opacity="0.49" />
+<circle cx="231.3" cy="326.4" r="0.9" fill="white" opacity="0.48" />
+<circle cx="607.9" cy="119.2" r="0.9" fill="white" opacity="0.79" />
+<circle cx="355.8" cy="209.5" r="1.1" fill="white" opacity="0.41" />
+<circle cx="173.6" cy="357.7" r="1.1" fill="white" opacity="0.26" />
+<circle cx="503.8" cy="393.7" r="0.7" fill="white" opacity="0.31" />
+<circle cx="74.6" cy="251.4" r="0.5" fill="white" opacity="0.69" />
+<circle cx="466.4" cy="227.8" r="0.9" fill="white" opacity="0.62" />
+<circle cx="604.6" cy="446.2" r="0.7" fill="white" opacity="0.54" />
+<circle cx="4.0" cy="370.4" r="0.8" fill="white" opacity="0.21" />
+<circle cx="466.0" cy="465.8" r="0.4" fill="white" opacity="0.57" />
+<circle cx="135.6" cy="436.3" r="1.1" fill="white" opacity="0.77" />
+<circle cx="365.7" cy="241.8" r="1.0" fill="white" opacity="0.43" />
+<circle cx="550.1" cy="461.6" r="0.9" fill="white" opacity="0.67" />
+<circle cx="624.7" cy="142.7" r="0.3" fill="white" opacity="0.48" />
+<circle cx="492.6" cy="548.3" r="1.2" fill="white" opacity="0.37" />
+<circle cx="106.0" cy="557.9" r="0.4" fill="white" opacity="0.22" />
+<circle cx="37.2" cy="545.6" r="1.0" fill="white" opacity="0.56" />
+<circle cx="64.5" cy="498.5" r="1.4" fill="white" opacity="0.80" />
+<circle cx="538.0" cy="219.8" r="1.2" fill="white" opacity="0.31" />
+<circle cx="99.3" cy="450.7" r="1.2" fill="white" opacity="0.66" />
+<circle cx="743.6" cy="221.6" r="1.1" fill="white" opacity="0.53" />
+<circle cx="135.3" cy="213.2" r="1.0" fill="white" opacity="0.63" />
+<circle cx="284.2" cy="287.9" r="0.3" fill="white" opacity="0.34" />
+<circle cx="96.7" cy="494.8" r="0.8" fill="white" opacity="0.70" />
+<circle cx="49.9" cy="365.8" r="0.8" fill="white" opacity="0.51" />
+<circle cx="504.6" cy="576.1" r="1.1" fill="white" opacity="0.52" />
+<circle cx="49.8" cy="438.2" r="1.3" fill="white" opacity="0.34" />
+<circle cx="651.7" cy="83.6" r="0.8" fill="white" opacity="0.68" />
+<circle cx="437.6" cy="427.9" r="1.1" fill="white" opacity="0.39" />
+<circle cx="797.4" cy="367.9" r="0.8" fill="white" opacity="0.59" />
+<circle cx="780.6" cy="10.7" r="0.5" fill="white" opacity="0.58" />
+<circle cx="29.3" cy="34.3" r="1.3" fill="white" opacity="0.38" />
+<circle cx="92.0" cy="427.3" r="0.7" fill="white" opacity="0.67" />
+<circle cx="312.4" cy="405.2" r="0.7" fill="white" opacity="0.33" />
+<circle cx="171.1" cy="91.9" r="0.7" fill="white" opacity="0.63" />
+<circle cx="673.7" cy="271.0" r="1.1" fill="white" opacity="0.40" />
+<circle cx="464.8" cy="70.3" r="1.1" fill="white" opacity="0.54" />
+<circle cx="658.6" cy="50.5" r="0.9" fill="white" opacity="0.30" />
+<circle cx="740.7" cy="268.4" r="1.2" fill="white" opacity="0.77" />
+<circle cx="359.8" cy="359.1" r="1.1" fill="white" opacity="0.61" />
+<circle cx="224.5" cy="509.2" r="0.9" fill="white" opacity="0.57" />
+<circle cx="627.8" cy="17.9" r="0.5" fill="white" opacity="0.36" />
+<circle cx="738.9" cy="324.3" r="0.5" fill="white" opacity="0.70" />
+<circle cx="653.9" cy="83.3" r="0.3" fill="white" opacity="0.77" />
+<circle cx="646.4" cy="502.2" r="1.0" fill="white" opacity="0.76" />
+<circle cx="384.3" cy="287.0" r="0.3" fill="white" opacity="0.63" />
+<circle cx="216.2" cy="304.9" r="0.3" fill="white" opacity="0.47" />
+<circle cx="99.7" cy="102.9" r="0.4" fill="white" opacity="0.65" />
+<circle cx="38.3" cy="414.4" r="0.4" fill="white" opacity="0.58" />
+<circle cx="37.0" cy="172.5" r="0.6" fill="white" opacity="0.54" />
+<circle cx="631.8" cy="263.8" r="1.1" fill="white" opacity="0.59" />
+<circle cx="537.7" cy="476.7" r="0.8" fill="white" opacity="0.72" />
+<circle cx="649.9" cy="122.6" r="0.7" fill="white" opacity="0.59" />
+<circle cx="130.1" cy="218.5" r="1.5" fill="white" opacity="0.65" />
+<circle cx="209.5" cy="439.2" r="1.2" fill="white" opacity="0.23" />
+<circle cx="11.8" cy="330.7" r="1.2" fill="white" opacity="0.34" />
+<circle cx="144.6" cy="599.6" r="1.4" fill="white" opacity="0.56" />
+<circle cx="654.2" cy="376.1" r="1.3" fill="white" opacity="0.79" />
+<circle cx="373.4" cy="316.9" r="1.0" fill="white" opacity="0.33" />
+<circle cx="725.7" cy="225.3" r="0.5" fill="white" opacity="0.24" />
+<circle cx="55.8" cy="281.8" r="1.2" fill="white" opacity="0.24" />
+<circle cx="211.4" cy="233.4" r="0.9" fill="white" opacity="0.59" />
+<circle cx="114.5" cy="327.2" r="0.5" fill="white" opacity="0.74" />
+<circle cx="757.0" cy="586.5" r="0.6" fill="white" opacity="0.34" />
+<circle cx="460.8" cy="486.8" r="0.7" fill="white" opacity="0.63" />
+<circle cx="137.2" cy="108.6" r="0.7" fill="white" opacity="0.21" />
+<circle cx="48.0" cy="439.9" r="0.7" fill="white" opacity="0.27" />
+<circle cx="555.7" cy="154.8" r="1.1" fill="white" opacity="0.56" />
+<circle cx="40.4" cy="264.8" r="0.9" fill="white" opacity="0.62" />
+<circle cx="186.1" cy="74.7" r="0.6" fill="white" opacity="0.56" />
+<circle cx="304.4" cy="162.6" r="0.6" fill="white" opacity="0.65" />
+<circle cx="41.0" cy="145.7" r="0.8" fill="white" opacity="0.70" />
+<circle cx="230.5" cy="3.4" r="1.0" fill="white" opacity="0.33" />
+<circle cx="443.8" cy="308.8" r="0.5" fill="white" opacity="0.79" />
+<circle cx="499.1" cy="147.7" r="1.3" fill="white" opacity="0.34" />
+<circle cx="130.7" cy="547.5" r="1.4" fill="white" opacity="0.23" />
+<circle cx="131.8" cy="447.7" r="0.7" fill="white" opacity="0.34" />
+<circle cx="724.0" cy="330.9" r="0.3" fill="white" opacity="0.73" />
+<circle cx="311.4" cy="181.6" r="0.8" fill="white" opacity="0.50" />
+<circle cx="646.2" cy="472.0" r="0.9" fill="white" opacity="0.61" />
+<circle cx="472.0" cy="48.5" r="1.1" fill="white" opacity="0.54" />
+<circle cx="488.6" cy="554.1" r="1.1" fill="white" opacity="0.37" />
+<circle cx="500.4" cy="393.0" r="1.2" fill="white" opacity="0.28" />
+<circle cx="152.9" cy="106.0" r="0.9" fill="white" opacity="0.20" />
+<circle cx="628.0" cy="125.7" r="0.9" fill="white" opacity="0.62" />
+<circle cx="93.5" cy="583.0" r="0.3" fill="white" opacity="0.79" />
+<circle cx="40.5" cy="224.9" r="0.9" fill="white" opacity="0.51" />
+<circle cx="590.2" cy="37.7" r="0.5" fill="white" opacity="0.40" />
+<circle cx="785.7" cy="232.8" r="1.0" fill="white" opacity="0.55" />
+<circle cx="36.3" cy="225.7" r="0.5" fill="white" opacity="0.32" />
+<circle cx="579.6" cy="320.0" r="1.2" fill="white" opacity="0.78" />
+<circle cx="233.3" cy="57.5" r="0.5" fill="white" opacity="0.43" />
+<circle cx="327.9" cy="427.0" r="1.0" fill="white" opacity="0.53" />
+<circle cx="401.5" cy="34.9" r="1.3" fill="white" opacity="0.63" />
+<circle cx="604.3" cy="594.2" r="1.4" fill="white" opacity="0.24" />
+<circle cx="23.1" cy="347.5" r="1.0" fill="white" opacity="0.57" />
+<circle cx="385.8" cy="205.0" r="0.3" fill="white" opacity="0.29" />
+<circle cx="455.4" cy="138.8" r="1.2" fill="white" opacity="0.62" />
+<circle cx="688.9" cy="2.5" r="1.0" fill="white" opacity="0.39" />
+<circle cx="652.4" cy="193.6" r="0.7" fill="white" opacity="0.60" />
+<circle cx="48.6" cy="273.1" r="0.7" fill="white" opacity="0.26" />
+  </g>
+
+  <!-- 中心光暈 -->
+  <ellipse cx="400" cy="300" rx="280" ry="200" fill="url(#center-glow)" />
+
+  <!-- Stargazers -->
+  <g class="stargazers">
+    
+    <g class="star" data-user="tznthou">
+      <!-- 光暈 -->
+      <circle
+        cx="388.69330018096105"
+        cy="311.56068991452156"
+        r="20"
+        fill="url(#glow-2)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-tznthou">
+        <circle cx="388.69330018096105" cy="311.56068991452156" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/2958534?v=4?s=56"
+        x="374.69330018096105"
+        y="297.56068991452156"
+        width="28"
+        height="28"
+        clip-path="url(#clip-tznthou)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="388.69330018096105"
+        cy="311.56068991452156"
+        r="14"
+        fill="none"
+        stroke="#f778ba"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="muyueh">
+      <!-- 光暈 -->
+      <circle
+        cx="398.7983470670864"
+        cy="279.44378804140575"
+        r="20"
+        fill="url(#glow-1)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-muyueh">
+        <circle cx="398.7983470670864" cy="279.44378804140575" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/1496082?v=4?s=56"
+        x="384.7983470670864"
+        y="265.44378804140575"
+        width="28"
+        height="28"
+        clip-path="url(#clip-muyueh)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="398.7983470670864"
+        cy="279.44378804140575"
+        r="14"
+        fill="none"
+        stroke="#a371f7"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="liminote">
+      <!-- 光暈 -->
+      <circle
+        cx="419.01722177689163"
+        cy="319.65344788554177"
+        r="20"
+        fill="url(#glow-3)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-liminote">
+        <circle cx="419.01722177689163" cy="319.65344788554177" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/224304077?v=4?s=56"
+        x="405.01722177689163"
+        y="305.65344788554177"
+        width="28"
+        height="28"
+        clip-path="url(#clip-liminote)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="419.01722177689163"
+        cy="319.65344788554177"
+        r="14"
+        fill="none"
+        stroke="#7ee787"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="wee1052">
+      <!-- 光暈 -->
+      <circle
+        cx="368.3828548717688"
+        cy="298.5905956185599"
+        r="20"
+        fill="url(#glow-2)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-wee1052">
+        <circle cx="368.3828548717688" cy="298.5905956185599" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/61536644?v=4?s=56"
+        x="354.3828548717688"
+        y="284.5905956185599"
+        width="28"
+        height="28"
+        clip-path="url(#clip-wee1052)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="368.3828548717688"
+        cy="298.5905956185599"
+        r="14"
+        fill="none"
+        stroke="#f778ba"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="leafjuicerose">
+      <!-- 光暈 -->
+      <circle
+        cx="428.3305290007934"
+        cy="277.06598227472955"
+        r="20"
+        fill="url(#glow-3)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-leafjuicerose">
+        <circle cx="428.3305290007934" cy="277.06598227472955" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/247272484?v=4?s=56"
+        x="414.3305290007934"
+        y="263.06598227472955"
+        width="28"
+        height="28"
+        clip-path="url(#clip-leafjuicerose)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="428.3305290007934"
+        cy="277.06598227472955"
+        r="14"
+        fill="none"
+        stroke="#7ee787"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="EmilyW300">
+      <!-- 光暈 -->
+      <circle
+        cx="383.6995240804518"
+        cy="344.202923992976"
+        r="20"
+        fill="url(#glow-4)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-EmilyW300">
+        <circle cx="383.6995240804518" cy="344.202923992976" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/218945912?v=4?s=56"
+        x="369.6995240804518"
+        y="330.202923992976"
+        width="28"
+        height="28"
+        clip-path="url(#clip-EmilyW300)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="383.6995240804518"
+        cy="344.202923992976"
+        r="14"
+        fill="none"
+        stroke="#ffa657"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="xa0627-sys">
+      <!-- 光暈 -->
+      <circle
+        cx="376.7005352672602"
+        cy="260.56975656360885"
+        r="20"
+        fill="url(#glow-0)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-xa0627-sys">
+        <circle cx="376.7005352672602" cy="260.56975656360885" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/229885779?v=4?s=56"
+        x="362.7005352672602"
+        y="246.56975656360885"
+        width="28"
+        height="28"
+        clip-path="url(#clip-xa0627-sys)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="376.7005352672602"
+        cy="260.56975656360885"
+        r="14"
+        fill="none"
+        stroke="#58a6ff"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="Rainbowrain-TW">
+      <!-- 光暈 -->
+      <circle
+        cx="448.56821236491373"
+        cy="321.40447855999736"
+        r="20"
+        fill="url(#glow-4)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-Rainbowrain-TW">
+        <circle cx="448.56821236491373" cy="321.40447855999736" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/29626927?v=4?s=56"
+        x="434.56821236491373"
+        y="307.40447855999736"
+        width="28"
+        height="28"
+        clip-path="url(#clip-Rainbowrain-TW)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="448.56821236491373"
+        cy="321.40447855999736"
+        r="14"
+        fill="none"
+        stroke="#ffa657"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="Twelvia">
+      <!-- 光暈 -->
+      <circle
+        cx="344.6060524066859"
+        cy="316.0201514692205"
+        r="20"
+        fill="url(#glow-2)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-Twelvia">
+        <circle cx="344.6060524066859" cy="316.0201514692205" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/225652718?v=4?s=56"
+        x="330.6060524066859"
+        y="302.0201514692205"
+        width="28"
+        height="28"
+        clip-path="url(#clip-Twelvia)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="344.6060524066859"
+        cy="316.0201514692205"
+        r="14"
+        fill="none"
+        stroke="#f778ba"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="chaotrista">
+      <!-- 光暈 -->
+      <circle
+        cx="422.62578197800826"
+        cy="248.60624907833812"
+        r="20"
+        fill="url(#glow-0)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-chaotrista">
+        <circle cx="422.62578197800826" cy="248.60624907833812" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/242624011?v=4?s=56"
+        x="408.62578197800826"
+        y="234.60624907833812"
+        width="28"
+        height="28"
+        clip-path="url(#clip-chaotrista)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="422.62578197800826"
+        cy="248.60624907833812"
+        r="14"
+        fill="none"
+        stroke="#58a6ff"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="daphne-coding">
+      <!-- 光暈 -->
+      <circle
+        cx="412.5795717653743"
+        cy="361.8779489227892"
+        r="20"
+        fill="url(#glow-3)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-daphne-coding">
+        <circle cx="412.5795717653743" cy="361.8779489227892" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/233009529?v=4?s=56"
+        x="398.5795717653743"
+        y="347.8779489227892"
+        width="28"
+        height="28"
+        clip-path="url(#clip-daphne-coding)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="412.5795717653743"
+        cy="361.8779489227892"
+        r="14"
+        fill="none"
+        stroke="#7ee787"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="paulasusu-collab">
+      <!-- 光暈 -->
+      <circle
+        cx="346.83890996032085"
+        cy="260.9459783143371"
+        r="20"
+        fill="url(#glow-1)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-paulasusu-collab">
+        <circle cx="346.83890996032085" cy="260.9459783143371" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/247593450?v=4?s=56"
+        x="332.83890996032085"
+        y="246.94597831433708"
+        width="28"
+        height="28"
+        clip-path="url(#clip-paulasusu-collab)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="346.83890996032085"
+        cy="260.9459783143371"
+        r="14"
+        fill="none"
+        stroke="#a371f7"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="twkelly69">
+      <!-- 光暈 -->
+      <circle
+        cx="468.7385702761586"
+        cy="293.63291572607136"
+        r="20"
+        fill="url(#glow-4)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-twkelly69">
+        <circle cx="468.7385702761586" cy="293.63291572607136" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/220343207?v=4?s=56"
+        x="454.7385702761586"
+        y="279.63291572607136"
+        width="28"
+        height="28"
+        clip-path="url(#clip-twkelly69)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="468.7385702761586"
+        cy="293.63291572607136"
+        r="14"
+        fill="none"
+        stroke="#ffa657"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="Avocado0330">
+      <!-- 光暈 -->
+      <circle
+        cx="367.53922135253936"
+        cy="355.7379355596871"
+        r="20"
+        fill="url(#glow-1)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-Avocado0330">
+        <circle cx="367.53922135253936" cy="355.7379355596871" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/247506363?v=4?s=56"
+        x="353.53922135253936"
+        y="341.7379355596871"
+        width="28"
+        height="28"
+        clip-path="url(#clip-Avocado0330)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="367.53922135253936"
+        cy="355.7379355596871"
+        r="14"
+        fill="none"
+        stroke="#a371f7"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="catnya">
+      <!-- 光暈 -->
+      <circle
+        cx="399.6060280760533"
+        cy="226.17171688944563"
+        r="20"
+        fill="url(#glow-1)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-catnya">
+        <circle cx="399.6060280760533" cy="226.17171688944563" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/27998038?v=4?s=56"
+        x="385.6060280760533"
+        y="212.17171688944563"
+        width="28"
+        height="28"
+        clip-path="url(#clip-catnya)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="399.6060280760533"
+        cy="226.17171688944563"
+        r="14"
+        fill="none"
+        stroke="#a371f7"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="Cycasio">
+      <!-- 光暈 -->
+      <circle
+        cx="457.0677500234899"
+        cy="335.4588061507539"
+        r="20"
+        fill="url(#glow-2)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-Cycasio">
+        <circle cx="457.0677500234899" cy="335.4588061507539" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/247293641?v=4?s=56"
+        x="443.0677500234899"
+        y="321.4588061507539"
+        width="28"
+        height="28"
+        clip-path="url(#clip-Cycasio)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="457.0677500234899"
+        cy="335.4588061507539"
+        r="14"
+        fill="none"
+        stroke="#f778ba"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="funfunlee0808-bit">
+      <!-- 光暈 -->
+      <circle
+        cx="330.8356184112633"
+        cy="311.4766034233254"
+        r="20"
+        fill="url(#glow-2)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-funfunlee0808-bit">
+        <circle cx="330.8356184112633" cy="311.4766034233254" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/243267863?v=4?s=56"
+        x="316.8356184112633"
+        y="297.4766034233254"
+        width="28"
+        height="28"
+        clip-path="url(#clip-funfunlee0808-bit)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="330.8356184112633"
+        cy="311.4766034233254"
+        r="14"
+        fill="none"
+        stroke="#f778ba"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="lwchen6520">
+      <!-- 光暈 -->
+      <circle
+        cx="462.745206727124"
+        cy="250.20541193509663"
+        r="20"
+        fill="url(#glow-0)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-lwchen6520">
+        <circle cx="462.745206727124" cy="250.20541193509663" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/247288182?v=4?s=56"
+        x="448.745206727124"
+        y="236.20541193509663"
+        width="28"
+        height="28"
+        clip-path="url(#clip-lwchen6520)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="462.745206727124"
+        cy="250.20541193509663"
+        r="14"
+        fill="none"
+        stroke="#58a6ff"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="cherylcherylliu">
+      <!-- 光暈 -->
+      <circle
+        cx="386.9158312607318"
+        cy="381.1955309822372"
+        r="20"
+        fill="url(#glow-0)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-cherylcherylliu">
+        <circle cx="386.9158312607318" cy="381.1955309822372" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/247802208?v=4?s=56"
+        x="372.9158312607318"
+        y="367.1955309822372"
+        width="28"
+        height="28"
+        clip-path="url(#clip-cherylcherylliu)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="386.9158312607318"
+        cy="381.1955309822372"
+        r="14"
+        fill="none"
+        stroke="#58a6ff"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="xiaoqing555">
+      <!-- 光暈 -->
+      <circle
+        cx="344.9373712009213"
+        cy="245.8747847961175"
+        r="20"
+        fill="url(#glow-1)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-xiaoqing555">
+        <circle cx="344.9373712009213" cy="245.8747847961175" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/248692297?v=4?s=56"
+        x="330.9373712009213"
+        y="231.8747847961175"
+        width="28"
+        height="28"
+        clip-path="url(#clip-xiaoqing555)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="344.9373712009213"
+        cy="245.8747847961175"
+        r="14"
+        fill="none"
+        stroke="#a371f7"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="tsmt45649">
+      <!-- 光暈 -->
+      <circle
+        cx="482.41373681924034"
+        cy="313.8243345698406"
+        r="20"
+        fill="url(#glow-4)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-tsmt45649">
+        <circle cx="482.41373681924034" cy="313.8243345698406" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/247952260?v=4?s=56"
+        x="468.41373681924034"
+        y="299.8243345698406"
+        width="28"
+        height="28"
+        clip-path="url(#clip-tsmt45649)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="482.41373681924034"
+        cy="313.8243345698406"
+        r="14"
+        fill="none"
+        stroke="#ffa657"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="0xImwhatIm">
+      <!-- 光暈 -->
+      <circle
+        cx="325.55597271046355"
+        cy="344.4972972250249"
+        r="20"
+        fill="url(#glow-0)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-0xImwhatIm">
+        <circle cx="325.55597271046355" cy="344.4972972250249" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/128876875?v=4?s=56"
+        x="311.55597271046355"
+        y="330.4972972250249"
+        width="28"
+        height="28"
+        clip-path="url(#clip-0xImwhatIm)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="325.55597271046355"
+        cy="344.4972972250249"
+        r="14"
+        fill="none"
+        stroke="#58a6ff"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="yspiper">
+      <!-- 光暈 -->
+      <circle
+        cx="416.0605936146627"
+        cy="216.26395741198746"
+        r="20"
+        fill="url(#glow-2)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-yspiper">
+        <circle cx="416.0605936146627" cy="216.26395741198746" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/43130538?v=4?s=56"
+        x="402.0605936146627"
+        y="202.26395741198746"
+        width="28"
+        height="28"
+        clip-path="url(#clip-yspiper)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="416.0605936146627"
+        cy="216.26395741198746"
+        r="14"
+        fill="none"
+        stroke="#f778ba"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="jack71rover">
+      <!-- 光暈 -->
+      <circle
+        cx="434.84004528705657"
+        cy="385.8784104559239"
+        r="20"
+        fill="url(#glow-1)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-jack71rover">
+        <circle cx="434.84004528705657" cy="385.8784104559239" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/244534329?v=4?s=56"
+        x="420.84004528705657"
+        y="371.8784104559239"
+        width="28"
+        height="28"
+        clip-path="url(#clip-jack71rover)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="434.84004528705657"
+        cy="385.8784104559239"
+        r="14"
+        fill="none"
+        stroke="#a371f7"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+
+    <g class="star" data-user="fendywu19">
+      <!-- 光暈 -->
+      <circle
+        cx="314.3395311723984"
+        cy="274.09155660436545"
+        r="20"
+        fill="url(#glow-4)"
+        opacity="0.6"
+      />
+      <!-- 頭像 -->
+      <clipPath id="clip-fendywu19">
+        <circle cx="314.3395311723984" cy="274.09155660436545" r="14" />
+      </clipPath>
+      <image
+        href="https://avatars.githubusercontent.com/u/249899126?v=4?s=56"
+        x="300.3395311723984"
+        y="260.09155660436545"
+        width="28"
+        height="28"
+        clip-path="url(#clip-fendywu19)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <!-- 邊框 -->
+      <circle
+        cx="314.3395311723984"
+        cy="274.09155660436545"
+        r="14"
+        fill="none"
+        stroke="#ffa657"
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+  </g>
+
+  <!-- 標題 -->
+  <text x="400" y="30" text-anchor="middle" fill="#8b949e" font-family="system-ui, sans-serif" font-size="12">
+    ✨ 25 Stargazers Galaxy ✨
+  </text>
+
+  <!-- 說明文字 -->
+  <text x="400" y="588" text-anchor="middle" fill="#484f58" font-family="system-ui, sans-serif" font-size="10">
+    Star this repo to join the galaxy!
+  </text>
+</svg>
