@@ -53,6 +53,16 @@
           "caption": "Aura Moods 氛圍色票"
         }
       ]
+    },
+    {
+      "dayIndex": 20,
+      "name": "seo-roaster",
+      "images": [
+        {
+          "src": "assets/projects/day-20/day-20-seo-roaster.webp",
+          "caption": "SEO 健檢小幫手 — 可愛外表毒舌傲嬌的 SEO 分析工具"
+        }
+      ]
     }
   ],
   "life": []
