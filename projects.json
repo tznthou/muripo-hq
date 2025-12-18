@@ -310,7 +310,7 @@
     "type": "web",
     "status": "scheduled",
     "repo": "https://github.com/tznthou/day-20-seo-roaster",
-    "demo": "",
+    "demo": "https://seo-roaster.zeabur.app/",
     "tags": ["web", "flask", "python", "seo", "beautifulsoup"]
   },
   {
