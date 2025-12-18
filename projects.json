@@ -308,10 +308,16 @@
     "name": "seo-roaster",
     "tagline": "SEO 吐槽器 - 可愛外表毒舌傲嬌的 SEO 分析工具",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-20-seo-roaster",
     "demo": "https://seo-roaster.zeabur.app/",
-    "tags": ["web", "flask", "python", "seo", "beautifulsoup"]
+    "tags": [
+      "web",
+      "flask",
+      "python",
+      "seo",
+      "beautifulsoup"
+    ]
   },
   {
     "date": "2025-12-20",
