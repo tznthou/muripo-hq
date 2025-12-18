@@ -33,6 +33,8 @@ SEO 每年的排名機制都在變。那些機制其實總歸而言，Google 本
 
 希望你也會喜歡這樣的檢測方式。
 
+![SEO 健檢小幫手](assets/projects/day-20/day-20-seo-roaster.webp)
+
 ---
 
 **Day 20 專案**：[SEO 吐槽器](https://seo-roaster.zeabur.app/) — 可愛外表毒舌傲嬌的 SEO 分析工具
