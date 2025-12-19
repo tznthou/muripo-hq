@@ -3,7 +3,6 @@ title: Day 21 隨想 — 末世裡的最後一道光
 date: 2025-12-20
 excerpt: 如果世界只剩下一台 CRT 螢幕，你會用它來尋找什麼？
 tags: [隨想, 末世, CRT, 訊號, 希望]
-cover: assets/projects/day-21/demo.webp
 ---
 
 ![The Last Sentinel](assets/projects/day-21/demo.webp)
