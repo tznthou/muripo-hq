@@ -16,7 +16,7 @@
       "images": [
         {
           "src": "assets/projects/day-14/day-14-simple-console-npm-394.webp",
-          "caption": "NPM 下載數 394 — 不到 24 小時的里程碑"
+          "caption": "day-14-simple-console-npm-394"
         }
       ]
     },
@@ -26,7 +26,7 @@
       "images": [
         {
           "src": "assets/projects/day-15/day-15-holo-card.webp",
-          "caption": "Holo-Card Studio"
+          "caption": "day-15-holo-card"
         }
       ]
     },
@@ -36,11 +36,11 @@
       "images": [
         {
           "src": "assets/projects/day-16/day-16-font-mixer-1.webp",
-          "caption": "字型調酒師 — 氛圍選擇介面"
+          "caption": "day-16-font-mixer-1"
         },
         {
           "src": "assets/projects/day-16/day-16-font-mixer-2.webp",
-          "caption": "字型配對預覽"
+          "caption": "day-16-font-mixer-2"
         }
       ]
     },
@@ -50,7 +50,7 @@
       "images": [
         {
           "src": "assets/projects/day-17/day-17-aura-moods.webp",
-          "caption": "Aura Moods 氛圍色票"
+          "caption": "day-17-aura-moods"
         }
       ]
     },
@@ -59,12 +59,22 @@
       "name": "seo-roaster",
       "images": [
         {
-          "src": "assets/projects/day-20/day-20-seo-roaster.webp",
-          "caption": "SEO 健檢小幫手 — 可愛外表毒舌傲嬌的 SEO 分析工具"
+          "src": "assets/projects/day-20/day-20-seo-roaster-mascot.webp",
+          "caption": "day-20-seo-roaster-mascot"
         },
         {
-          "src": "assets/projects/day-20/day-20-seo-roaster-mascot.webp",
-          "caption": "虛擬角色 — 不甘心表情"
+          "src": "assets/projects/day-20/day-20-seo-roaster.webp",
+          "caption": "day-20-seo-roaster"
+        }
+      ]
+    },
+    {
+      "dayIndex": 21,
+      "name": "last-sentinel",
+      "images": [
+        {
+          "src": "assets/projects/day-21/demo.webp",
+          "caption": "demo"
         }
       ]
     }
