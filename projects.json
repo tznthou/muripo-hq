@@ -322,13 +322,20 @@
   {
     "date": "2025-12-20",
     "dayIndex": 21,
-    "name": "Day 21",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "last-sentinel",
+    "tagline": "末世哨兵 - 後啟示錄網路訊號監聽終端",
+    "type": "web",
+    "status": "done",
+    "repo": "https://github.com/tznthou/day-21-last-sentinel",
     "demo": "",
-    "tags": []
+    "tags": [
+      "web",
+      "nodejs",
+      "express",
+      "sse",
+      "insforge",
+      "crt-terminal"
+    ]
   },
   {
     "date": "2025-12-21",
