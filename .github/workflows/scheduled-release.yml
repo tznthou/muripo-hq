@@ -6,6 +6,10 @@ on:
     - cron: '0 16 * * *'
   workflow_dispatch:  # 也可以手動觸發測試
 
+concurrency:
+  group: repo-update
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -51,6 +55,7 @@ jobs:
           else
             git add projects.json
             git commit -m "🚀 Auto-release: $(TZ='Asia/Taipei' date +%Y-%m-%d) project is now live!"
+            git pull --rebase
             git push
             echo "Changes pushed successfully"
           fi

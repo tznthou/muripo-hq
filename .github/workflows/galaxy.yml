@@ -14,8 +14,8 @@ on:
 
 # 避免同時多個 workflow 執行
 concurrency:
-  group: galaxy-update
-  cancel-in-progress: true
+  group: repo-update
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -51,5 +51,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/galaxy.png
-          git diff --staged --quiet || git commit -m "✨ Update stargazer galaxy [skip ci]"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "✨ Update stargazer galaxy [skip ci]"
+            git pull --rebase
+            git push
+          fi

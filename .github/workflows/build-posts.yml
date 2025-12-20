@@ -6,6 +6,10 @@ on:
       - 'content/posts/**/*.md'
   workflow_dispatch:  # 手動觸發
 
+concurrency:
+  group: repo-update
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -38,6 +42,7 @@ jobs:
           else
             git add data/posts.json
             git commit -m "build: auto-rebuild posts.json"
+            git pull --rebase
             git push
             echo "posts.json updated successfully"
           fi
