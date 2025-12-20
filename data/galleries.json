@@ -77,6 +77,16 @@
           "caption": "demo"
         }
       ]
+    },
+    {
+      "dayIndex": 22,
+      "name": "site-portrait",
+      "images": [
+        {
+          "src": "assets/projects/day-22/day-22-site-portrait.webp",
+          "caption": "day-22-site-portrait"
+        }
+      ]
     }
   ],
   "life": []
