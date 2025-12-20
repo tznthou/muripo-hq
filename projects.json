@@ -340,13 +340,19 @@
   {
     "date": "2025-12-21",
     "dayIndex": 22,
-    "name": "Day 22",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "site-portrait",
+    "tagline": "網站肖像 - 將網站的靈魂轉化為藝術海報",
+    "type": "web",
+    "status": "done",
+    "repo": "https://github.com/tznthou/day-22-site-portrait",
     "demo": "",
-    "tags": []
+    "tags": [
+      "web",
+      "nodejs",
+      "express",
+      "puppeteer",
+      "poster-generator"
+    ]
   },
   {
     "date": "2025-12-22",
