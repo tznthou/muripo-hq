@@ -5,8 +5,6 @@ excerpt: 如果世界只剩下一台 CRT 螢幕，你會用它來尋找什麼？
 tags: [隨想, 末世, CRT, 訊號, 希望]
 ---
 
-![The Last Sentinel](assets/projects/day-21/demo.webp)
-
 昨天的專案，我們用了一個虛擬角色來做吐槽的主軸。那個傲嬌的粉紅貓娘，用她的毒舌來點評你的 SEO。
 
 今天，我們換了一個方向——不是角色，而是**環境**。
@@ -70,3 +68,5 @@ tags: [隨想, 末世, CRT, 訊號, 希望]
 > *"The world ended, but the watch continues."*
 
 **[→ 查看專案](https://github.com/tznthou/day-21-last-sentinel)**
+
+![The Last Sentinel](assets/projects/day-21/demo.webp)
