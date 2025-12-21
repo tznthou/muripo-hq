@@ -87,6 +87,16 @@
           "caption": "day-22-site-portrait"
         }
       ]
+    },
+    {
+      "dayIndex": 23,
+      "name": "city-breath",
+      "images": [
+        {
+          "src": "assets/projects/day-23/day-23-city-breath.webp",
+          "caption": "day-23-city-breath"
+        }
+      ]
     }
   ],
   "life": []
