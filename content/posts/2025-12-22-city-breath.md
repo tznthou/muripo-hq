@@ -83,7 +83,7 @@ tags: [隨想, 資料視覺化, 空氣品質, 開放資料, AQI]
 
 ## 慕約的啟發
 
-這個專案深受「[慕約車禍地圖](https://github.com/MuyangDu/TaiwanTrafficAccidentMap)」的啟發。
+這個專案深受「[慕約車禍地圖](https://muyueh.github.io/traffic/)」的啟發。
 
 用公開資料，把看不見的問題，變成看得見的視覺化。
 
