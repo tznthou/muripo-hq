@@ -357,13 +357,20 @@
   {
     "date": "2025-12-22",
     "dayIndex": 23,
-    "name": "Day 23",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "city-breath",
+    "tagline": "城市的呼吸 - 空氣品質年輪視覺化",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-23-city-breath",
     "demo": "",
-    "tags": []
+    "tags": [
+      "web",
+      "flask",
+      "python",
+      "canvas",
+      "aqi",
+      "data-visualization"
+    ]
   },
   {
     "date": "2025-12-23",
