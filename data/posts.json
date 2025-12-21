@@ -1,5 +1,20 @@
 [
   {
+    "slug": "2025-12-22-city-breath",
+    "title": "Day 23 隨想 — 看不見的呼吸",
+    "date": "2025-12-22",
+    "excerpt": "我們每天呼吸兩萬次，卻從未真正「看見」空氣。",
+    "tags": [
+      "隨想",
+      "資料視覺化",
+      "空氣品質",
+      "開放資料",
+      "AQI"
+    ],
+    "cover": "",
+    "content": "<p>昨天我們幫網站找自己的臉孔。今天，我想嘗試另一件事——<strong>蒐集公開資料</strong>。</p>\n<hr>\n<h2>虛應故事的資料</h2>\n<p>在蒐集政府公開資料的過程中，你會發現一件殘酷的事實：</p>\n<p>大部分的資料，真的只是<strong>虛應故事</strong>。</p>\n<p>為了交差而做的資料。欄位不完整、更新不穩定、格式混亂。</p>\n<p>所以問題變成：如何在有限的資料中，找到真正有價值的東西？如何把這些零散的碎片，煉成黃金？</p>\n<p>這需要時間。需要耐心。需要一點運氣。</p>\n<hr>\n<h2>看不見的空氣</h2>\n<p>找著找著，我發現了一件事。</p>\n<p><strong>空氣是看不見的。</strong></p>\n<p>但我們每天都在呼吸。每天兩萬次。</p>\n<p>空氣與我們息息相關——咳嗽、呼吸、甚至痰。這些都與空氣有關。</p>\n<p>但我們真的<strong>感受過</strong>嗎？</p>\n<p>我們知道今天的空氣品質如何嗎？我們知道什麼在影響我們的呼吸嗎？</p>\n<hr>\n<h2>年輪的隱喻</h2>\n<p>找到環境部的空氣品質指標資料後，我試著把它做成<strong>年輪</strong>。</p>\n<p>每一圈，代表一個小時的空氣。</p>\n<p>好的空氣，圓滑、翠綠。壞的空氣，扭曲、發紅。</p>\n<p>24 圈，24 小時的記憶。</p>\n<p>就像樹木記錄每一年的氣候，這些年輪記錄了城市的呼吸。</p>\n<hr>\n<h2>純白的背景</h2>\n<p>為什麼用純白背景？</p>\n<p>因為乾淨的空氣，應該是<strong>無色</strong>的。</p>\n<p>當你打開這個頁面，第一感覺應該是「清新」。那正是我們對空氣的期待。</p>\n<p>純白也是脆弱的——任何污點都會被看見。</p>\n<p>這就是空氣的真相：我們以為看不見的東西，其實一直在影響我們。</p>\n<hr>\n<h2>無感的可怕</h2>\n<p>做完這個專案，我發現了一件可怕的事。</p>\n<p>台灣很多地方的空氣品質，<strong>並不如我們想像中適合居住</strong>。</p>\n<p>但我們無感。</p>\n<p>絕大多數的人，都是無感的。</p>\n<p>在做這份資料之前，我也不知道。我也無感。</p>\n<hr>\n<h2>慕約的啟發</h2>\n<p>這個專案深受「<a href=\"https://github.com/MuyangDu/TaiwanTrafficAccidentMap\">慕約車禍地圖</a>」的啟發。</p>\n<p>用公開資料，把看不見的問題，變成看得見的視覺化。</p>\n<p>讓人「感受」到問題的存在。</p>\n<p>接下來幾天，如果找到適合的資料來源，我會繼續發展類似的專案。</p>\n<hr>\n<blockquote>\n<p><em>「也許空氣是看不見的，但它的故事可以被看見。」</em></p>\n<p><em>&quot;Perhaps air is invisible, but its story can be seen.&quot;</em></p>\n</blockquote>\n<p><strong><a href=\"https://city-breath.zeabur.app/\">→ 查看專案</a></strong> | <strong><a href=\"https://github.com/tznthou/day-23-city-breath\">→ GitHub</a></strong></p>\n<p><img src=\"assets/projects/day-23/day-23-city-breath.webp\" alt=\"City Breath\"></p>\n"
+  },
+  {
     "slug": "2025-12-21-site-portrait",
     "title": "Day 22 隨想 — 幫網站畫一張臉",
     "date": "2025-12-21",

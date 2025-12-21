@@ -362,7 +362,7 @@
     "type": "web",
     "status": "scheduled",
     "repo": "https://github.com/tznthou/day-23-city-breath",
-    "demo": "",
+    "demo": "https://city-breath.zeabur.app/",
     "tags": [
       "web",
       "flask",
