@@ -360,7 +360,7 @@
     "name": "city-breath",
     "tagline": "城市的呼吸 - 空氣品質年輪視覺化",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-23-city-breath",
     "demo": "https://city-breath.zeabur.app/",
     "tags": [
