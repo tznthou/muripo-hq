@@ -1,5 +1,20 @@
 [
   {
+    "slug": "2025-12-23-topography-of-care",
+    "title": "Day 24 隨想 — 有座標的靈魂",
+    "date": "2025-12-23",
+    "excerpt": "每一個點，都是某個人曾經標註的關懷。",
+    "tags": [
+      "隨想",
+      "資料視覺化",
+      "OpenStreetMap",
+      "社福資源",
+      "等高線"
+    ],
+    "cover": "",
+    "content": "<p>昨天我們感受了城市的呼吸。知道了 PM2.5 的可怕，知道了空氣的品質。</p>\n<p>今天，我們來關心城市的<strong>地貌</strong>。</p>\n<hr>\n<h2>地圖上的關懷</h2>\n<p>這次嘗試結合了地圖。</p>\n<p>從 OpenStreetMap 整理了一些可以「關懷」的指標——醫院、診所、藥局、圖書館、社區活動中心、幼兒園、社福機構。</p>\n<p>知道這些社會資源在哪裡之後，用等高線的方式讓它視覺化。</p>\n<p>山峰代表資源密集，深谷代表資源稀缺。</p>\n<hr>\n<h2>我不確定</h2>\n<p>看著這張地圖，我不確定它能不能真正反映出醫療資源稀缺的地區。</p>\n<p>因為 OpenStreetMap 的資料，是每個志工非常辛苦一一收集、一一填上去的。</p>\n<p>它不是完整的。它是<strong>有選擇的</strong>。</p>\n<p>但正因為如此，它也是<strong>有人情味的</strong>。</p>\n<hr>\n<h2>有座標的靈魂</h2>\n<p>每一個點，都是某個人曾經標註的關懷。</p>\n<p>可能是一位志工在社區踏查後，回家打開電腦，仔細地把那間小診所的位置標上去。可能是一位圖書館員，想讓更多人知道這裡有一個溫暖的閱讀角落。</p>\n<p>這些點，不是冰冷的座標。</p>\n<p>它們是<strong>有座標的靈魂</strong>。</p>\n<hr>\n<h2>值得被注意的事</h2>\n<p>做這個專案的過程中，我發現了 <a href=\"https://osm.tw/\">OSM 台灣</a> 這個社群。</p>\n<p>他們的精神是：<strong>自己的地圖自己畫</strong>。</p>\n<p>他們定期聚會、定期活動、定期發表。有一群人持續在做這件事。</p>\n<p>這值得被注意。</p>\n<hr>\n<h2>也許我們可以做些什麼</h2>\n<p>藉由這樣的專案，我也不知道我能做些什麼。</p>\n<p>也許是讓更多人注意到，原來還有這樣一個社群，在默默地為我們畫地圖。</p>\n<p>如果你也有感覺——也許你也可以去做些什麼。</p>\n<p>標註你家附近的那間小診所。標註那個你常去的圖書館。標註那個照顧過你的社福機構。</p>\n<p>下次有人打開這個地圖，就會看到你種下的那座小山丘。</p>\n<hr>\n<blockquote>\n<p><em>「山峰是守護，深谷是呼喚。每一條等高線，都是關懷的輻射。」</em></p>\n<p><em>&quot;Peaks are guardians, valleys are callings. Every contour line is the radiation of care.&quot;</em></p>\n</blockquote>\n<p><strong><a href=\"https://tznthou.github.io/day-24-topography-of-care/\">→ 查看專案</a></strong> | <strong><a href=\"https://github.com/tznthou/day-24-topography-of-care\">→ GitHub</a></strong> | <strong><a href=\"https://osm.tw/\">→ OSM 台灣</a></strong></p>\n<p><img src=\"assets/projects/day-24/day-24-topography-of-care.webp\" alt=\"The Topography of Care\"></p>\n"
+  },
+  {
     "slug": "2025-12-22-city-breath",
     "title": "Day 23 隨想 — 看不見的呼吸",
     "date": "2025-12-22",
