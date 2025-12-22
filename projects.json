@@ -378,7 +378,7 @@
     "name": "topography-of-care",
     "tagline": "關懷地景 - 社福資源等高線視覺化",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-24-topography-of-care",
     "demo": "https://tznthou.github.io/day-24-topography-of-care/",
     "tags": [
