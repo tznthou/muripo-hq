@@ -97,6 +97,16 @@
           "caption": "day-23-city-breath"
         }
       ]
+    },
+    {
+      "dayIndex": 24,
+      "name": "topography-of-care",
+      "images": [
+        {
+          "src": "assets/projects/day-24/day-24-topography-of-care.webp",
+          "caption": "day-24-topography-of-care"
+        }
+      ]
     }
   ],
   "life": []
