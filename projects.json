@@ -375,13 +375,19 @@
   {
     "date": "2025-12-23",
     "dayIndex": 24,
-    "name": "Day 24",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "topography-of-care",
+    "tagline": "關懷地景 - 社福資源等高線視覺化",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-24-topography-of-care",
+    "demo": "https://tznthou.github.io/day-24-topography-of-care/",
+    "tags": [
+      "web",
+      "leaflet",
+      "d3-contour",
+      "osm",
+      "data-visualization"
+    ]
   },
   {
     "date": "2025-12-24",
