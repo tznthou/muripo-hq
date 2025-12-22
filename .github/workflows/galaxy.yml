@@ -55,6 +55,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "✨ Update stargazer galaxy [skip ci]"
-            git pull --rebase
+            git pull --rebase --autostash
             git push
           fi
