@@ -392,13 +392,19 @@
   {
     "date": "2025-12-24",
     "dayIndex": 25,
-    "name": "Day 25",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "data-tapestry",
+    "tagline": "數據織錦 - 每天自動織入 GitHub 趨勢的慢藝術",
+    "type": "action",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-25-data-tapestry",
     "demo": "",
-    "tags": []
+    "tags": [
+      "flat-data",
+      "svg",
+      "ossinsight",
+      "generative-art",
+      "data-visualization"
+    ]
   },
   {
     "date": "2025-12-25",
