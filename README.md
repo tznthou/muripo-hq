@@ -38,6 +38,8 @@
 | 20 | [seo-roaster](https://github.com/tznthou/day-20-seo-roaster) | web | SEO 吐槽器 - 傲嬌 SEO 分析工具 |
 | 21 | [last-sentinel](https://github.com/tznthou/day-21-last-sentinel) | web | 末世哨兵 - 網路訊號監聯終端 |
 | 22 | [site-portrait](https://github.com/tznthou/day-22-site-portrait) | web | 網站肖像 - 將網站的靈魂轉化為藝術海報 |
+| 23 | [city-breath](https://github.com/tznthou/day-23-city-breath) | web | 城市的呼吸 - 空氣品質年輪視覺化 |
+| 24 | [topography-of-care](https://github.com/tznthou/day-24-topography-of-care) | web | 關懷地景 - 社福資源等高線視覺化 |
 
 ---
 
