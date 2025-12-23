@@ -395,7 +395,7 @@
     "name": "data-tapestry",
     "tagline": "數據織錦 - 每天自動織入 GitHub 趨勢的慢藝術",
     "type": "action",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-25-data-tapestry",
     "demo": "",
     "tags": [
