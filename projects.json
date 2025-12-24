@@ -412,7 +412,7 @@
     "name": "harmonic-monoliths",
     "tagline": "和聲巨石 - 生成式音樂裝置",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-26-harmonic-monoliths",
     "demo": "https://tznthou.github.io/day-26-harmonic-monoliths/",
     "tags": [
