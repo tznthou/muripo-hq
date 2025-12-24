@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2025-12-25-harmonic-monoliths",
+    "title": "Day 26：沉靜時段與好奇心",
+    "date": "2025-12-24",
+    "excerpt": "最好的學習，是帶著問題去找答案，然後開始動手。",
+    "tags": [
+      "muripo",
+      "day-26",
+      "tone-js",
+      "generative-music",
+      "web-audio",
+      "隨想"
+    ],
+    "cover": "",
+    "content": "<p>一直以來，我對音樂這種東西都很痴迷。</p>\n<p>去年的黑色星期五，我買了 Suno。</p>\n<p>那個時候，我花了大量的時間每天在做音樂。每一天，直到做出一首自己滿意的歌曲為止。那是一段很投入的時光——早上醒來就開始調參數、聽 demo、改歌詞、重新生成。反覆試驗，直到某個瞬間，聽到的東西終於對了。</p>\n<p>那個時候的我，真的很喜歡那種狀態。</p>\n<hr>\n<h2>沉靜的時段</h2>\n<p>現在，我也很投入在做 AI Coding。</p>\n<p>這個當下的狀態，跟那時候做音樂其實很像。每一個時間點，我都會有一段「沉靜時段」。</p>\n<p>不是說物理上的安靜，而是一種心理上的專注。腦袋裡只有眼前的問題，沒有其他雜訊。</p>\n<p>我相信，這樣的沉靜時段，才是最好進步的時刻。</p>\n<p>當你完全沉浸在一件事情裡面的時候，時間會變得不一樣。一小時可能像十分鐘，也可能像一整天。但不管怎樣，那段時間裡你確實在往前走。</p>\n<hr>\n<h2>帶著問題去找答案</h2>\n<p>所以，最好的學習方式是什麼？</p>\n<p>我覺得是：<strong>帶著問題去找答案，然後開始實作。</strong></p>\n<p>不是先把所有理論讀完，再開始動手。</p>\n<p>而是先動手，遇到問題再去找答案。</p>\n<p>你真的開始動手，你才會發現問題在哪裡。</p>\n<p>教學文件寫得再詳細，都比不上自己踩過一次坑的印象深刻。別人的經驗是別人的，只有自己經歷過的，才會變成自己的。</p>\n<hr>\n<h2>保持好奇心</h2>\n<p>最後一件事：<strong>永遠保持好奇心。</strong></p>\n<p>當你對一件事情好奇的時候，學習就不再是負擔，而是一種探索。</p>\n<p>「這個怎麼做的？」\n「如果改成這樣會怎樣？」\n「為什麼別人是這樣寫的？」</p>\n<p>這些問題會驅動你往前走。而答案，也許就在下一個轉角。</p>\n<hr>\n<blockquote>\n<p><em>「每一根巨石的升起，都是一個聲音維度的甦醒。」</em></p>\n</blockquote>\n<p><strong><a href=\"https://tznthou.github.io/day-26-harmonic-monoliths/\">→ 查看專案</a></strong> | <strong><a href=\"https://github.com/tznthou/day-26-harmonic-monoliths\">→ GitHub</a></strong></p>\n<p><img src=\"assets/projects/day-26/day-26-harmonic-monoliths.webp\" alt=\"The Harmonic Monoliths\"></p>\n"
+  },
+  {
     "slug": "2025-12-24-data-tapestry",
     "title": "Day 25：織一張沒有人能預測的圖",
     "date": "2025-12-23",
