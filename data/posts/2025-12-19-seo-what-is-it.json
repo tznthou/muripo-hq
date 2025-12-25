@@ -1,0 +1,13 @@
+{
+  "slug": "2025-12-19-seo-what-is-it",
+  "title": "SEO 到底是什麼？從 WordPress 到自己動手做",
+  "date": "2025-12-19",
+  "excerpt": "從 WordPress 時代就被灌輸 SEO 很重要，但它到底是什麼？為什麼沒有人能給出百分之百的答案？",
+  "tags": [
+    "SEO",
+    "心得",
+    "Day20"
+  ],
+  "cover": "",
+  "content": "<h2>SEO 的迷思</h2>\n<p>今天想探討的是 SEO 這件事。</p>\n<p>從以前學習做 WordPress 的時候，網路上的資訊就告訴我們：<strong>SEO 非常重要</strong>。當然，我們也知道在 Google 搜尋當中 SEO 確實重要，甚至還有相當多的 WordPress Plugin 專門幫你把網站的 SEO 做到最前面。這些 Plugin 有些還有相當昂貴的年費、月租費，你必須付費才能使用。</p>\n<h2>一般人能不能自己做？</h2>\n<p>但 SEO 一般人有沒有辦法去做？有沒有辦法去檢查？</p>\n<p>事實上，我相信一定是可以的。</p>\n<h2>SEO 到底是什麼？</h2>\n<p>問題在於：<strong>SEO 到底是什麼？</strong></p>\n<p>SEO 每年的排名機制都在變。Google 雖然有公佈一些官方指南和已確認的排名因素，但完整的演算法細節和各因素的權重從未公開。這些 SEO 知識都是使用者根據 Google 的官方文件，或者是一些前人的總結、一些觀察、一些可能的趨勢推敲出來的。</p>\n<p>我不知道，我們也許是被一些其他的因素所影響。</p>\n<p>總而言之，SEO 是什麼？到現在我覺得沒有人能給我們一個<strong>百分之百確定的答案</strong>。</p>\n<h2>所以我做了這個</h2>\n<p>但至少我們——或者說我——盡量去收集了一些現在好像很夯的 SEO 因素，把它做成一個<strong>吐槽的排行榜</strong>，讓它幫你檢核你網站是否符合在現在遊戲制度框架之下的 SEO 分數。</p>\n<p>希望你也會喜歡這樣的檢測方式。</p>\n<p><img src=\"assets/projects/day-20/day-20-seo-roaster.webp\" alt=\"SEO 健檢小幫手\"></p>\n<hr>\n<p><strong>Day 20 專案</strong>：<a href=\"https://seo-roaster.zeabur.app/\">SEO 吐槽器</a> — 可愛外表毒舌傲嬌的 SEO 分析工具</p>\n"
+}

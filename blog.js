@@ -5,19 +5,30 @@
     const slug = new URLSearchParams(window.location.search).get('slug');
 
     try {
-      const res = await fetch('data/posts.json');
-      const posts = await res.json();
-
       if (slug) {
-        renderPost(posts.find(p => p.slug === slug));
+        // Single post: load individual JSON
+        const res = await fetch(`data/posts/${encodeURIComponent(slug)}.json`);
+        if (!res.ok) throw new Error('Post not found');
+        const post = await res.json();
+        renderPost(post);
       } else {
+        // List page: load lightweight index only
+        const res = await fetch('data/posts-index.json');
+        const posts = await res.json();
         renderList(posts);
       }
     } catch (err) {
       console.error('Failed to load posts:', err);
       const container = document.getElementById('posts-list') || document.getElementById('post-content');
       if (container) {
-        container.innerHTML = '<p class="empty-state">載入失敗</p>';
+        if (slug) {
+          container.innerHTML = `
+            <p class="empty-state">文章不存在</p>
+            <a href="blog.html" class="back-link">← 返回文章列表</a>
+          `;
+        } else {
+          container.innerHTML = '<p class="empty-state">載入失敗</p>';
+        }
       }
     }
   }
@@ -47,14 +58,6 @@
   function renderPost(post) {
     const container = document.getElementById('post-content');
     if (!container) return;
-
-    if (!post) {
-      container.innerHTML = `
-        <p class="empty-state">文章不存在</p>
-        <a href="blog.html" class="back-link">← 返回文章列表</a>
-      `;
-      return;
-    }
 
     document.title = `${post.title} - Muripo HQ`;
 

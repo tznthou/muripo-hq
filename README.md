@@ -74,23 +74,40 @@
 ## 結構
 
 ```
-index.html        # 月曆主頁
-blog.html         # Blog 列表
-post.html         # 單篇文章
-gallery.html      # 相簿
-style.css         # 樣式
-script.js         # 月曆渲染邏輯
-blog.js           # Blog 渲染邏輯
-gallery.js        # 相簿渲染邏輯
-projects.json     # 30 天專案資料
+index.html          # 月曆主頁
+blog.html           # Blog 列表
+post.html           # 單篇文章
+gallery.html        # 相簿
+style.css           # 樣式
+script.js           # 月曆渲染邏輯
+blog.js             # Blog 渲染邏輯
+gallery.js          # 相簿渲染邏輯
+projects.json       # 30 天專案資料
 data/
-├── posts.json    # Blog 文章（build 產生）
-└── galleries.json # 相簿資料
+├── posts-index.json  # Blog 索引（metadata only）
+├── posts/            # 單篇文章 JSON（含完整內容）
+│   ├── 2025-12-11-xxx.json
+│   └── ...
+└── galleries.json    # 相簿資料
 content/
-└── posts/        # Markdown 原稿
+└── posts/          # Markdown 原稿
 scripts/
-└── build-posts.js # Markdown → JSON
+└── build-posts.js  # Markdown → JSON
 ```
+
+### Blog 架構說明
+
+採用**分離式架構**，優化載入效能：
+
+| 檔案 | 用途 | 大小 |
+|------|------|------|
+| `posts-index.json` | 列表頁用，只有 metadata | 輕量（~2KB） |
+| `posts/*.json` | 單篇文章，含完整 HTML 內容 | 每篇 ~3KB |
+
+**優點**：
+- 列表頁只載入索引，不載入全部文章內容
+- 單篇頁只載入該篇文章
+- 文章數量增加不影響載入速度
 
 ---
 
@@ -119,7 +136,7 @@ npm run build:posts
 3. Commit 並 push：
 
 ```bash
-git add data/posts.json && git commit -m "新增文章" && git push
+git add data/posts-index.json data/posts/ && git commit -m "新增文章" && git push
 ```
 
 ---

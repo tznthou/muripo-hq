@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build posts.json
+      - name: Build posts
         run: npm run build:posts
 
       - name: Commit and push if changed
@@ -37,12 +37,12 @@ jobs:
           git config user.name "Muripo Bot"
           git config user.email "action@github.com"
 
-          if git diff --quiet data/posts.json; then
+          if git diff --quiet data/posts-index.json && git diff --quiet data/posts/; then
             echo "No changes to commit"
           else
-            git add data/posts.json
-            git commit -m "build: auto-rebuild posts.json"
+            git add data/posts-index.json data/posts/
+            git commit -m "build: auto-rebuild posts"
             git pull --rebase
             git push
-            echo "posts.json updated successfully"
+            echo "Posts updated successfully"
           fi

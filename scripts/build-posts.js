@@ -4,7 +4,9 @@ const path = require('path');
 const { marked } = require('marked');
 
 const POSTS_DIR = path.join(__dirname, '../content/posts');
-const OUTPUT_FILE = path.join(__dirname, '../data/posts.json');
+const DATA_DIR = path.join(__dirname, '../data');
+const POSTS_OUTPUT_DIR = path.join(DATA_DIR, 'posts');
+const INDEX_FILE = path.join(DATA_DIR, 'posts-index.json');
 
 // Frontmatter parser
 function parseFrontmatter(content) {
@@ -28,16 +30,18 @@ function parseFrontmatter(content) {
 }
 
 function build() {
-  // Create data directory if not exists
-  const dataDir = path.dirname(OUTPUT_FILE);
-  if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
+  // Create directories if not exist
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+  if (!fs.existsSync(POSTS_OUTPUT_DIR)) {
+    fs.mkdirSync(POSTS_OUTPUT_DIR, { recursive: true });
   }
 
   // Check if posts directory exists
   if (!fs.existsSync(POSTS_DIR)) {
-    console.log('No posts directory found, creating empty posts.json');
-    fs.writeFileSync(OUTPUT_FILE, '[]');
+    console.log('No posts directory found, creating empty index');
+    fs.writeFileSync(INDEX_FILE, '[]');
     return;
   }
 
@@ -48,29 +52,48 @@ function build() {
     .reverse(); // Newest first
 
   if (files.length === 0) {
-    console.log('No markdown files found, creating empty posts.json');
-    fs.writeFileSync(OUTPUT_FILE, '[]');
+    console.log('No markdown files found, creating empty index');
+    fs.writeFileSync(INDEX_FILE, '[]');
     return;
   }
 
-  const posts = files.map(file => {
+  const index = [];
+
+  files.forEach(file => {
     const content = fs.readFileSync(path.join(POSTS_DIR, file), 'utf-8');
     const { meta, body } = parseFrontmatter(content);
     const slug = file.replace('.md', '');
+    const htmlContent = marked.parse(body);
 
-    return {
+    // Build index entry (metadata only, no content)
+    index.push({
+      slug,
+      title: meta.title || slug,
+      date: meta.date || slug.slice(0, 10),
+      excerpt: meta.excerpt || '',
+      tags: Array.isArray(meta.tags) ? meta.tags : [],
+      cover: meta.cover || ''
+    });
+
+    // Write individual post file (full content)
+    const postFile = path.join(POSTS_OUTPUT_DIR, `${slug}.json`);
+    fs.writeFileSync(postFile, JSON.stringify({
       slug,
       title: meta.title || slug,
       date: meta.date || slug.slice(0, 10),
       excerpt: meta.excerpt || '',
       tags: Array.isArray(meta.tags) ? meta.tags : [],
       cover: meta.cover || '',
-      content: marked.parse(body)
-    };
+      content: htmlContent
+    }, null, 2));
   });
 
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(posts, null, 2));
-  console.log(`Built ${posts.length} post(s) to ${OUTPUT_FILE}`);
+  // Write index file
+  fs.writeFileSync(INDEX_FILE, JSON.stringify(index, null, 2));
+
+  console.log(`Built ${files.length} post(s):`);
+  console.log(`  - Index: ${INDEX_FILE}`);
+  console.log(`  - Posts: ${POSTS_OUTPUT_DIR}/`);
 }
 
 build();

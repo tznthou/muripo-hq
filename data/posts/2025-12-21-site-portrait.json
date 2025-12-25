@@ -1,0 +1,15 @@
+{
+  "slug": "2025-12-21-site-portrait",
+  "title": "Day 22 隨想 — 幫網站畫一張臉",
+  "date": "2025-12-21",
+  "excerpt": "網站有自己的 logo、色彩、字型。但如果我們把這些 DNA 抽取出來，會看到什麼樣的臉？",
+  "tags": [
+    "隨想",
+    "設計",
+    "DNA",
+    "網站",
+    "程式藝術"
+  ],
+  "cover": "",
+  "content": "<p>今天的專案，乍看之下有點無聊。</p>\n<p>我們要幫網站畫臉。</p>\n<hr>\n<h2>網站本來就有臉啊？</h2>\n<p>沒錯。每個網站都有自己的 logo，有自己的色彩，有自己的形態。</p>\n<p>Instagram 是漸層的相機，GitHub 是章魚貓，Twitter（現在叫 X）是那隻藍色的鳥。</p>\n<p>它們早就有臉了。我們還要幫它畫什麼？</p>\n<hr>\n<h2>設計者賦予的，與網站自己長出來的</h2>\n<p>這裡有個有趣的區別。</p>\n<p>設計者賦予網站的東西——logo、品牌色、字型——這些是「外顯」的身份。</p>\n<p>但網站在運作的過程中，其實也累積了很多「隱性」的資料：</p>\n<ul>\n<li>Meta 標籤裡的描述</li>\n<li>Open Graph 的縮圖</li>\n<li>Favicon 的形狀</li>\n<li>主色調的分布</li>\n<li>甚至是 404 頁面的設計</li>\n</ul>\n<p>這些東西加在一起，會形成一種<strong>氣質</strong>。</p>\n<hr>\n<h2>從 DNA 到肖像</h2>\n<p>我們做的事情，有點像是基因檢測。</p>\n<p>不是去看網站「說」自己是什麼，而是去看它「實際上」是什麼。</p>\n<p>把它的 meta、它的 favicon、它的 og:image、它的主色調全部抽取出來，然後用程式碼重新組合——</p>\n<p>你會發現，有些網站的「臉」跟它的「自我認知」其實不太一樣。</p>\n<hr>\n<h2>程式碼做平面設計</h2>\n<p>這個專案還有另一個意義：用程式碼來做設計。</p>\n<p>不是 Figma，不是 Photoshop，而是純粹的 HTML + CSS + Canvas。</p>\n<p>當你用程式碼來思考設計的時候，你會發現：</p>\n<ul>\n<li>漸層可以是數學</li>\n<li>排版可以是演算法</li>\n<li>色彩可以是資料</li>\n</ul>\n<p>這是一種不同的創作方式。也許不是最有效率的，但絕對是最有趣的。</p>\n<hr>\n<h2>結語</h2>\n<p>網站有臉嗎？</p>\n<p>有的。</p>\n<p>但有時候，它自己也不知道自己長什麼樣子。</p>\n<p>我們只是幫它照了一面鏡子。</p>\n<hr>\n<p><strong><a href=\"https://github.com/tznthou/day-22-site-portrait\">→ 查看專案</a></strong> ｜ <strong><a href=\"https://tznthou.github.io/day-22-site-portrait/\">→ 線上體驗</a></strong></p>\n<p><img src=\"assets/projects/day-22/day-22-site-portrait.webp\" alt=\"Site Portrait\"></p>\n"
+}
