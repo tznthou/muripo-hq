@@ -40,6 +40,8 @@
 | 22 | [site-portrait](https://github.com/tznthou/day-22-site-portrait) | web | 網站肖像 - 將網站的靈魂轉化為藝術海報 |
 | 23 | [city-breath](https://github.com/tznthou/day-23-city-breath) | web | 城市的呼吸 - 空氣品質年輪視覺化 |
 | 24 | [topography-of-care](https://github.com/tznthou/day-24-topography-of-care) | web | 關懷地景 - 社福資源等高線視覺化 |
+| 25 | [data-tapestry](https://github.com/tznthou/day-25-data-tapestry) | action | 數據織錦 - GitHub Trending 慢藝術 |
+| 26 | [harmonic-monoliths](https://github.com/tznthou/day-26-harmonic-monoliths) | web | 和聲巨石 - 生成式音樂裝置 |
 
 ---
 

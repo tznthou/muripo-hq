@@ -427,13 +427,19 @@
   {
     "date": "2025-12-26",
     "dayIndex": 27,
-    "name": "Day 27",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "fortune-echoes",
+    "tagline": "財運迴響 - 台灣彩券頭獎開出地點視覺化",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-27-fortune-echoes",
     "demo": "",
-    "tags": []
+    "tags": [
+      "web",
+      "leaflet",
+      "d3",
+      "taiwan-lottery",
+      "data-visualization"
+    ]
   },
   {
     "date": "2025-12-27",
