@@ -444,13 +444,21 @@
   {
     "date": "2025-12-27",
     "dayIndex": 28,
-    "name": "Day 28",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
+    "name": "site-tomograph",
+    "tagline": "網站斷層掃描 - 3D 即時拓撲診斷儀",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-28-site-tomograph",
     "demo": "",
-    "tags": []
+    "tags": [
+      "web",
+      "fastapi",
+      "websocket",
+      "three-js",
+      "3d-force-graph",
+      "crawler",
+      "diagnostics"
+    ]
   },
   {
     "date": "2025-12-28",
