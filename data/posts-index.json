@@ -1,5 +1,37 @@
 [
   {
+    "slug": "2025-12-27-site-tomograph",
+    "title": "Day 28：看見過程，而不只是結果",
+    "date": "2025-12-27",
+    "excerpt": "市面上有無數檢查死連結的工具，但它們只給你結果。我想看見的是過程。",
+    "tags": [
+      "muripo",
+      "day-28",
+      "visualization",
+      "3d",
+      "websocket",
+      "crawler",
+      "fastapi"
+    ],
+    "cover": ""
+  },
+  {
+    "slug": "2025-12-26-fortune-echoes",
+    "title": "Day 27：有沒有所謂的風水寶穴？",
+    "date": "2025-12-26",
+    "excerpt": "財運是否固定在某些地方？還是它只是剛好在那裡發生？這張地圖記錄的是過去，不是未來。",
+    "tags": [
+      "muripo",
+      "day-27",
+      "visualization",
+      "lottery",
+      "map",
+      "leaflet",
+      "d3"
+    ],
+    "cover": ""
+  },
+  {
     "slug": "2025-12-25-site-portrait-v6",
     "title": "修改第22天的專案 — 當幫別人畫肖像的工具，自己沒有臉",
     "date": "2025-12-25",
