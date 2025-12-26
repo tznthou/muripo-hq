@@ -53,4 +53,4 @@ Google 一下「dead link checker」，會跳出一堆結果。有線上服務�
 
 現在就這樣，我想就很足夠了。
 
-[看看網站斷層掃描 →](https://github.com/tznthou/day-28-site-tomograph)
+[看看網站斷層掃描 →](https://site-tomograph.zeabur.app/)
