@@ -107,6 +107,26 @@
           "caption": "day-24-topography-of-care"
         }
       ]
+    },
+    {
+      "dayIndex": 26,
+      "name": "harmonic-monoliths",
+      "images": [
+        {
+          "src": "assets/projects/day-26/day-26-harmonic-monoliths.webp",
+          "caption": "day-26-harmonic-monoliths"
+        }
+      ]
+    },
+    {
+      "dayIndex": 29,
+      "name": "well-of-probability",
+      "images": [
+        {
+          "src": "assets/projects/day-29/day-29-well-of-probability.webp",
+          "caption": "day-29-well-of-probability"
+        }
+      ]
     }
   ],
   "life": []
