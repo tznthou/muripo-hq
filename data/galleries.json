@@ -119,6 +119,16 @@
       ]
     },
     {
+      "dayIndex": 28,
+      "name": "site-tomograph",
+      "images": [
+        {
+          "src": "assets/projects/day-28/day-28-site-tomograph.webp",
+          "caption": "day-28-site-tomograph"
+        }
+      ]
+    },
+    {
       "dayIndex": 29,
       "name": "well-of-probability",
       "images": [
