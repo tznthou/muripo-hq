@@ -463,13 +463,20 @@
   {
     "date": "2025-12-28",
     "dayIndex": 29,
-    "name": "Day 29",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "well-of-probability",
+    "tagline": "機率之井 - 彩券數據視覺交響樂",
+    "type": "web",
+    "status": "done",
+    "repo": "https://github.com/tznthou/day-29-well-of-probability",
+    "demo": "https://well-of-probability.zeabur.app/",
+    "tags": [
+      "web",
+      "d3",
+      "plotly",
+      "lottery",
+      "data-visualization",
+      "statistics"
+    ]
   },
   {
     "date": "2025-12-29",

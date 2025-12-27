@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2025-12-27-well-of-probability",
+    "title": "Day 29：硬幣與紙鈔的差別",
+    "date": "2025-12-27",
+    "excerpt": "把錢丟進井裡，硬幣至少還會濺出水花。紙鈔呢？連水花都沒有。",
+    "tags": [
+      "muripo",
+      "day-29",
+      "visualization",
+      "lottery",
+      "d3",
+      "plotly",
+      "probability"
+    ],
+    "cover": ""
+  },
+  {
     "slug": "2025-12-27-site-tomograph",
     "title": "Day 28：看見過程，而不只是結果",
     "date": "2025-12-27",
