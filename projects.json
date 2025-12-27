@@ -468,7 +468,7 @@
     "type": "web",
     "status": "done",
     "repo": "https://github.com/tznthou/day-29-well-of-probability",
-    "demo": "https://well-of-probability.zeabur.app/",
+    "demo": "https://tznthou.github.io/day-29-well-of-probability/",
     "tags": [
       "web",
       "d3",

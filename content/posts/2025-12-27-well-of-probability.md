@@ -46,4 +46,4 @@ tags: [muripo, day-29, visualization, lottery, d3, plotly, probability]
 如果是硬幣，那就享受那個水花吧。
 如果是紙鈔⋯⋯也許，留著比較好。
 
-[看看機率之井 →](https://well-of-probability.zeabur.app/)
+[看看機率之井 →](https://tznthou.github.io/day-29-well-of-probability/)
