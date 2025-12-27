@@ -42,6 +42,9 @@
 | 24 | [topography-of-care](https://github.com/tznthou/day-24-topography-of-care) | web | 關懷地景 - 社福資源等高線視覺化 |
 | 25 | [data-tapestry](https://github.com/tznthou/day-25-data-tapestry) | action | 數據織錦 - GitHub Trending 慢藝術 |
 | 26 | [harmonic-monoliths](https://github.com/tznthou/day-26-harmonic-monoliths) | web | 和聲巨石 - 生成式音樂裝置 |
+| 27 | [fortune-echoes](https://github.com/tznthou/day-27-fortune-echoes) | web | 財運迴響 - 彩券頭獎地點視覺化 |
+| 28 | [site-tomograph](https://github.com/tznthou/day-28-site-tomograph) | web | 網站斷層掃描 - 3D 拓撲診斷儀 |
+| 29 | [well-of-probability](https://github.com/tznthou/day-29-well-of-probability) | web | 機率之井 - 彩券數據視覺交響樂 |
 
 ---
 
