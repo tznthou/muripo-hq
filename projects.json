@@ -481,7 +481,36 @@
   {
     "date": "2025-12-29",
     "dayIndex": 30,
-    "name": "Day 30",
+    "name": "loom-of-society",
+    "tagline": "社會織機 - 即時情緒數據的光之絲綢",
+    "type": "web",
+    "status": "scheduled",
+    "repo": "https://github.com/tznthou/day-30-loom-of-society",
+    "demo": "https://loomsc.zeabur.app/",
+    "tags": [
+      "web",
+      "three-js",
+      "generative-art",
+      "data-visualization",
+      "webgl",
+      "sentiment-analysis"
+    ]
+  },
+  {
+    "date": "2025-12-30",
+    "dayIndex": 31,
+    "name": "Day 31",
+    "tagline": "Coming soon...",
+    "type": "",
+    "status": "soon",
+    "repo": "",
+    "demo": "",
+    "tags": []
+  },
+  {
+    "date": "2025-12-31",
+    "dayIndex": 32,
+    "name": "Day 32",
     "tagline": "Coming soon...",
     "type": "",
     "status": "soon",
