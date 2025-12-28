@@ -484,7 +484,7 @@
     "name": "loom-of-society",
     "tagline": "社會織機 - 即時情緒數據的光之絲綢",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-30-loom-of-society",
     "demo": "https://loomsc.zeabur.app/",
     "tags": [
