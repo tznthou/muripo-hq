@@ -137,6 +137,16 @@
           "caption": "day-29-well-of-probability"
         }
       ]
+    },
+    {
+      "dayIndex": 30,
+      "name": "loom-of-society",
+      "images": [
+        {
+          "src": "assets/projects/day-30/day-30-loom-of-society.webp",
+          "caption": "day-30-loom-of-society"
+        }
+      ]
     }
   ],
   "life": []
