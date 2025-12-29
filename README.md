@@ -2,7 +2,7 @@
 
 > 用最不正經的方式，做最省事的工具。
 
-**30 天 30 Repo 挑戰** — 2025/11/30 ~ 2025/12/29
+**32 天 32 Repo 挑戰** — 2025/11/30 ~ 2025/12/31（12 月大滿貫）
 
 🔗 **[前往 Muripo HQ](https://tznthou.github.io/muripo-hq/)**
 
@@ -45,6 +45,9 @@
 | 27 | [fortune-echoes](https://github.com/tznthou/day-27-fortune-echoes) | web | 財運迴響 - 彩券頭獎地點視覺化 |
 | 28 | [site-tomograph](https://github.com/tznthou/day-28-site-tomograph) | web | 網站斷層掃描 - 3D 拓撲診斷儀 |
 | 29 | [well-of-probability](https://github.com/tznthou/day-29-well-of-probability) | web | 機率之井 - 彩券數據視覺交響樂 |
+| 30 | [loom-of-society](https://github.com/tznthou/day-30-loom-of-society) | web | 社會織機 - 即時情緒數據的光之絲綢 |
+| 31 | TBD | | 12/30 Coming soon... |
+| 32 | TBD | | 12/31 Coming soon... |
 
 ---
 
@@ -87,7 +90,7 @@ style.css           # 樣式
 script.js           # 月曆渲染邏輯
 blog.js             # Blog 渲染邏輯
 gallery.js          # 相簿渲染邏輯
-projects.json       # 30 天專案資料
+projects.json       # 32 天專案資料
 data/
 ├── posts-index.json  # Blog 索引（metadata only）
 ├── posts/            # 單篇文章 JSON（含完整內容）
