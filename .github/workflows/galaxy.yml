@@ -39,6 +39,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Pull latest changes
+        run: git pull origin main
+
       - name: Generate galaxy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -55,6 +58,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "✨ Update stargazer galaxy [skip ci]"
-            git pull --rebase --autostash
             git push
           fi
