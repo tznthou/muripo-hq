@@ -21,9 +21,11 @@ const CONFIG = {
   centerX: 400,
   centerY: 300,
 
-  // 黃金螺旋參數
-  goldenAngle: 137.508 * (Math.PI / 180), // 黃金角（弧度）
-  spiralScale: 18, // 螺旋擴散係數
+  // 黃金螺旋參數（對數螺旋）
+  phi: (1 + Math.sqrt(5)) / 2, // 黃金比例 φ ≈ 1.618
+  spiralA: 8, // 螺旋起始半徑
+  spiralGrowth: 0.15, // 螺旋增長率（每弧度）
+  angleStep: Math.PI / 6, // 每顆星之間的角度間隔（30度）
 
   // 星星樣式
   starSize: 28, // 頭像大小
@@ -52,19 +54,20 @@ function seededRandom(seed) {
 }
 
 // ============================================
-// 黃金螺旋座標計算
+// 黃金螺旋座標計算（對數螺旋）
 // ============================================
 function calculatePosition(index, username) {
   const rand = seededRandom(username);
 
-  // 基礎螺旋位置
+  // 對數螺旋公式：r = a * e^(b*θ)
+  // 這會產生經典的黃金螺旋曲線
   const n = index + 1;
-  const radius = CONFIG.spiralScale * Math.sqrt(n);
-  const angle = n * CONFIG.goldenAngle;
+  const angle = n * CONFIG.angleStep; // 累積角度
+  const radius = CONFIG.spiralA * Math.exp(CONFIG.spiralGrowth * angle);
 
-  // 加入隨機偏移，讓分佈更自然
-  const offsetRadius = radius + (rand() - 0.5) * 10;
-  const offsetAngle = angle + (rand() - 0.5) * 0.3;
+  // 微小隨機偏移（保持螺旋形狀但增加自然感）
+  const offsetRadius = radius + (rand() - 0.5) * 3;
+  const offsetAngle = angle + (rand() - 0.5) * 0.08;
 
   const x = CONFIG.centerX + offsetRadius * Math.cos(offsetAngle);
   const y = CONFIG.centerY + offsetRadius * Math.sin(offsetAngle);
@@ -133,7 +136,9 @@ function getDemoData() {
     'octocat', 'torvalds', 'gaearon', 'sindresorhus', 'tj',
     'yyx990803', 'addyosmani', 'paulirish', 'fat', 'mdo',
     'defunkt', 'mojombo', 'pjhyett', 'wycats', 'evanphx',
-    'tpope', 'mattn', 'junegunn', 'sharkdp', 'BurntSushi'
+    'tpope', 'mattn', 'junegunn', 'sharkdp', 'BurntSushi',
+    'antirez', 'rauchg', 'getify', 'kentcdodds', 'dan_abramov',
+    'wesbos', 'sarah_edo', 'cassidoo', 'una', 'argyleink'
   ];
 
   return demoUsers.map((username, index) => ({
