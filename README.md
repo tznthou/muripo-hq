@@ -46,7 +46,7 @@
 | 28 | [site-tomograph](https://github.com/tznthou/day-28-site-tomograph) | web | 網站斷層掃描 - 3D 拓撲診斷儀 |
 | 29 | [well-of-probability](https://github.com/tznthou/day-29-well-of-probability) | web | 機率之井 - 彩券數據視覺交響樂 |
 | 30 | [loom-of-society](https://github.com/tznthou/day-30-loom-of-society) | web | 社會織機 - 即時情緒數據的光之絲綢 |
-| 31 | TBD | | 12/30 Coming soon... |
+| 31 | [operation-cobra](https://github.com/tznthou/day-31-operation-cobra) | web | 眼鏡蛇行動 - 披著工作外皮的隱形遊戲 |
 | 32 | TBD | | 12/31 Coming soon... |
 
 ---
