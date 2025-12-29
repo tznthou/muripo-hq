@@ -502,7 +502,7 @@
     "name": "operation-cobra",
     "tagline": "行動代號眼鏡蛇 - 披著工作外皮的隱形遊戲",
     "type": "web",
-    "status": "scheduled",
+    "status": "done",
     "repo": "https://github.com/tznthou/day-31-operation-cobra",
     "demo": "https://tznthou.github.io/day-31-operation-cobra/",
     "tags": [
