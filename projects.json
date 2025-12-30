@@ -115,7 +115,7 @@
     "demo": "https://tznthou.github.io/day-08-game-of-life/",
     "tags": [
       "web",
-      "d3.js",
+      "d3",
       "simulation",
       "cellular-automata"
     ]
@@ -417,7 +417,7 @@
     "demo": "https://tznthou.github.io/day-26-harmonic-monoliths/",
     "tags": [
       "web",
-      "tone-js",
+      "tone.js",
       "css-3d",
       "generative-music",
       "web-audio",
@@ -473,7 +473,7 @@
       "web",
       "d3",
       "plotly",
-      "lottery",
+      "taiwan-lottery",
       "data-visualization",
       "statistics"
     ]
@@ -517,12 +517,19 @@
   {
     "date": "2025-12-31",
     "dayIndex": 32,
-    "name": "Day 32",
-    "tagline": "Coming soon...",
-    "type": "",
-    "status": "soon",
-    "repo": "",
-    "demo": "",
-    "tags": []
+    "name": "muripo-wrapped",
+    "tagline": "Muripo Wrapped 2025 - 年度回顧統計",
+    "type": "web",
+    "status": "done",
+    "repo": "https://github.com/tznthou/day-32-muripo-wrapped",
+    "demo": "https://tznthou.github.io/day-32-muripo-wrapped/",
+    "tags": [
+      "web",
+      "vanilla-js",
+      "css-scroll-snap",
+      "web-audio",
+      "statistics",
+      "wrapped"
+    ]
   }
 ]

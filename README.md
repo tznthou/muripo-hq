@@ -47,7 +47,7 @@
 | 29 | [well-of-probability](https://github.com/tznthou/day-29-well-of-probability) | web | 機率之井 - 彩券數據視覺交響樂 |
 | 30 | [loom-of-society](https://github.com/tznthou/day-30-loom-of-society) | web | 社會織機 - 即時情緒數據的光之絲綢 |
 | 31 | [operation-cobra](https://github.com/tznthou/day-31-operation-cobra) | web | 行動代號眼鏡蛇 - 披著工作外皮的隱形遊戲 |
-| 32 | TBD | | 12/31 Coming soon... |
+| 32 | [muripo-wrapped](https://github.com/tznthou/day-32-muripo-wrapped) | web | Muripo Wrapped 2025 - 年度回顧統計 |
 
 ---
 
