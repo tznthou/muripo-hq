@@ -1,5 +1,20 @@
 [
   {
+    "slug": "2025-12-31-still-work-to-do",
+    "title": "挑戰結束了，但還有好多事可以做",
+    "date": "2025-12-31",
+    "excerpt": "32 天 32 個專案完成了，但仔細想想，還有很多收尾工作等著我。README 格式不統一、前半期的 Code Review 沒做、每天都在超時⋯⋯AI Coding 真的太好玩了。",
+    "tags": [
+      "muripo",
+      "reflection",
+      "code-review",
+      "security",
+      "learning",
+      "ai-coding"
+    ],
+    "cover": ""
+  },
+  {
     "slug": "2025-12-30-muripo-wrapped",
     "title": "Day 32：打完收工",
     "date": "2025-12-30",
