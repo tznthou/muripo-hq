@@ -1,6 +1,6 @@
 ---
 title: 站上 Generative AI 年會小聚講台
-date: 2025-01-15
+date: 2026-01-15
 excerpt: 從完成挑戰到站上講台，這是一段意料之外的旅程。昨晚的 10 分鐘短講，比變魔術還緊張。
 tags: [muripo, speaking, genai, reflection]
 ---
