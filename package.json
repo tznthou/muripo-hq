@@ -1,7 +1,7 @@
 {
   "name": "hq",
   "version": "1.0.0",
-  "description": "> 用最不正經的方式，做最省事的工具。",
+  "description": "> \u7528\u6700\u4e0d\u6b63\u7d93\u7684\u65b9\u5f0f\uff0c\u505a\u6700\u7701\u4e8b\u7684\u5de5\u5177\u3002",
   "main": "script.js",
   "scripts": {
     "build:posts": "node scripts/build-posts.js",
@@ -27,5 +27,8 @@
   },
   "dependencies": {
     "puppeteer": "^23.0.0"
+  },
+  "overrides": {
+    "basic-ftp": "5.2.0"
   }
 }
