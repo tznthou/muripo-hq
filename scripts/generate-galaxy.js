@@ -357,4 +357,7 @@ async function main() {
   console.log(`🌟 Total stars in galaxy: ${stargazers.length}`);
 }
 
-main().catch(console.error);
+main().catch(error => {
+  console.error(error);
+  process.exit(1);
+});
