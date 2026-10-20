@@ -109,9 +109,9 @@ async function fetchStargazers() {
       }
     );
 
+    // 出錯就中止：用不完整的名單產圖會 commit 錯圖，一直掛到下次有人按星
     if (!response.ok) {
-      console.error(`❌ API Error: ${response.status}`);
-      break;
+      throw new Error(`❌ API Error: ${response.status}`);
     }
 
     const data = await response.json();
