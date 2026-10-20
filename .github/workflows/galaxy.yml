@@ -1,16 +1,15 @@
 name: Update Stargazer Galaxy
 
 on:
-  # 當有人 star/unstar 時觸發
+  # 有人按星時觸發（watch 只有 started，取消星星要等下次按星或手動觸發才會反映）
   watch:
     types: [started]
 
-  # 每日 UTC 00:00 同步一次（防止遺漏）
-  schedule:
-    - cron: '0 0 * * *'
-
   # 手動觸發
   workflow_dispatch:
+
+  # 刻意不設 schedule：公開 repo 的排程 workflow 60 天沒有活動會被自動停用，
+  # 停用後連按星都不會觸發
 
 # 避免同時多個 workflow 執行
 concurrency:
