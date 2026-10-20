@@ -40,13 +40,14 @@ const CONFIG = {
 // Seeded Random（確保同一 ID 永遠在同位置）
 // ============================================
 function seededRandom(seed) {
-  const hash = seed.split('').reduce((acc, char) => {
+  let state = seed.split('').reduce((acc, char) => {
     return ((acc << 5) - acc) + char.charCodeAt(0);
   }, 0);
 
   // Mulberry32 algorithm
   return function() {
-    let t = (hash + 0x6D2B79F5) | 0;
+    state = (state + 0x6D2B79F5) | 0;
+    let t = state;
     t = Math.imul(t ^ (t >>> 15), t | 1);
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
@@ -66,8 +67,10 @@ function calculatePosition(index, username) {
   const radius = CONFIG.spiralA * Math.exp(CONFIG.spiralGrowth * angle);
 
   // 微小隨機偏移（保持螺旋形狀但增加自然感）
-  const offsetRadius = radius + (rand() - 0.5) * 3;
-  const offsetAngle = angle + (rand() - 0.5) * 0.08;
+  // 兩個偏移共用同一個值，維持 seededRandom 修正前的頭像位置
+  const jitter = rand();
+  const offsetRadius = radius + (jitter - 0.5) * 3;
+  const offsetAngle = angle + (jitter - 0.5) * 0.08;
 
   const x = CONFIG.centerX + offsetRadius * Math.cos(offsetAngle);
   const y = CONFIG.centerY + offsetRadius * Math.sin(offsetAngle);
@@ -149,6 +152,25 @@ function getDemoData() {
 }
 
 // ============================================
+// 頭像預先下載成 data URI
+// （讓 Chrome 從網路載入頭像，每次渲染的像素都會有細微差異）
+// ============================================
+async function inlineAvatars(stargazers) {
+  return Promise.all(stargazers.map(async user => {
+    const url = `${user.avatarUrl}?s=${CONFIG.starSize * 2}`;
+    try {
+      const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!response.ok) return { ...user, avatarSrc: url };
+      const type = response.headers.get('content-type');
+      const data = Buffer.from(await response.arrayBuffer()).toString('base64');
+      return { ...user, avatarSrc: `data:${type};base64,${data}` };
+    } catch {
+      return { ...user, avatarSrc: url };
+    }
+  }));
+}
+
+// ============================================
 // 生成 HTML（用於 Puppeteer 渲染）
 // ============================================
 function generateHTML(stargazers) {
@@ -160,17 +182,18 @@ function generateHTML(stargazers) {
     return `
     <div class="star" style="left: ${pos.x}px; top: ${pos.y}px;">
       <div class="glow" style="background: radial-gradient(circle, ${glowColor}cc 0%, ${glowColor}4d 50%, transparent 70%);"></div>
-      <img src="${user.avatarUrl}?s=${CONFIG.starSize * 2}" alt="${user.username}" />
+      <img src="${user.avatarSrc}" alt="${user.username}" />
       <div class="border" style="border-color: ${glowColor};"></div>
     </div>`;
   }).join('\n');
 
-  // 生成背景星點
+  // 生成背景星點（固定種子：位置每次都一樣，圖只在 stargazers 變動時才會變）
+  const rand = seededRandom('background');
   const bgStars = Array.from({ length: 150 }, () => {
-    const x = Math.random() * CONFIG.width;
-    const y = Math.random() * CONFIG.height;
-    const r = Math.random() * 1.2 + 0.3;
-    const opacity = Math.random() * 0.6 + 0.2;
+    const x = rand() * CONFIG.width;
+    const y = rand() * CONFIG.height;
+    const r = rand() * 1.2 + 0.3;
+    const opacity = rand() * 0.6 + 0.2;
     return `<div class="bg-star" style="left: ${x.toFixed(1)}px; top: ${y.toFixed(1)}px; width: ${r * 2}px; height: ${r * 2}px; opacity: ${opacity.toFixed(2)};"></div>`;
   }).join('\n');
 
@@ -345,7 +368,7 @@ async function main() {
   }
 
   console.log('🎨 Generating galaxy...');
-  const html = generateHTML(stargazers);
+  const html = generateHTML(await inlineAvatars(stargazers));
 
   // 確保 assets 目錄存在
   const assetsDir = join(__dirname, '..', 'assets');
