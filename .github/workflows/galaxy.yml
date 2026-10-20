@@ -61,7 +61,8 @@ jobs:
           fi
 
   # 按星觸發的執行失敗時，GitHub 只通知按星的人、不會通知 repo 擁有者，
-  # 所以失敗時開一個 issue（已經有開著的就留言），讓擁有者收到通知
+  # 所以失敗時開一個 issue（已經有開著的就留言）並 @ 擁有者：
+  # 被提及不受 watch 設定影響，一定會收到通知
   notify-failure:
     needs: generate
     if: failure()
@@ -75,11 +76,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           TRIGGER: ${{ github.event_name }}
         run: |
           title="galaxy 產圖失敗"
-          body="觸發方式：${TRIGGER}
+          body="@${OWNER} galaxy 產圖失敗
+          觸發方式：${TRIGGER}
           執行紀錄：${RUN_URL}"
           number=$(gh issue list --state open --limit 100 --json number,title \
             --jq ".[] | select(.title == \"${title}\") | .number" | head -1)
